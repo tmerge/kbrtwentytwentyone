@@ -10,6 +10,7 @@
 <body>
     <div class="wrapper">
         <h1>Willkommen auf der Startseite</h1>
+        <button class="btn btn-primary">Klick mich</button>
     </div>
     <?php get_footer();?>
 </body>
