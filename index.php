@@ -7,15 +7,16 @@
  */
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri();?>/assets/kbr_favicon.ico" />
     <title>Kommunal Bündnis Recke | ...weil es um Reck geht!</title>
     <?php get_header();?>
 </head>
 <body>
-    <?php get_footer();?>
+    <?php echo "index"; get_footer();?>
 </body>
 </html>
 
