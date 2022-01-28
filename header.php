@@ -6,17 +6,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/img/kbr_favicon.ico">
+    <link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mr-auto fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light mr-auto fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/KBR_Logo.png" class="img-responsive" height="45px"></a>
             <div class="collapse navbar-collapse mr-auto" id="navbarToggler">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="/blog">Blog</a>
+                            <a class="nav-link text-uppercase" href="/blog">Blog</a>
                         </li>
                         <!--<li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

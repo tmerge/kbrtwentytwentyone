@@ -70,11 +70,6 @@ hr {
 .card-header {
   color: black;
 }
-.blog .list-group-item {
-  min-height: 60px;
-  border-radius: 25px;
-  margin-bottom: 10px;
-}
 
 .blog .list-group-item a {
   padding: 10px;
@@ -192,7 +187,7 @@ p > .a-date,
 /* nav link */
 .nav-link {
   font-family: "Fira Sans", sans-serif;
-  color: #0094a2 !important;
+  color: white !important;
 }
 /* search */
 .search-bar form {
