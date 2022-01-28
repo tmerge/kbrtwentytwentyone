@@ -46,13 +46,13 @@
         </div>
         <div class="row my-3" id="social">
             <div class="col col-md-3 align-self-center">
-                <a href="https://www.instagram.com/kommunalbuendnis_recke/"><i class="fab fa-instagram"></i></a>
+                <a class="social-link" href="https://www.instagram.com/kommunalbuendnis_recke/"><i class="fab fa-instagram"></i></a>
             </div>
             <div class="col col-md-3 align-self-center">
-                <a href="https://www.facebook.com/kommunalbuendnis/"><i class="fab fa-facebook-f"></i></a>
+                <a class="social-link" href="https://www.facebook.com/kommunalbuendnis/"><i class="fab fa-facebook-f"></i></a>
             </div>
             <div class="col col-md-3 align-self-center">
-                <a href="https://www.youtube.com/channel/UCVna1ANc2cM1AZCeiz4_NQQ"><i class="fab fa-youtube"></i></a>
+                <a class="social-link" href="https://www.youtube.com/channel/UCVna1ANc2cM1AZCeiz4_NQQ"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
         

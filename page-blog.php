@@ -16,7 +16,7 @@ if ($debug) {
 
 <body>
     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/s.svg" class="bg img-responsive container-sm-auto">
-    <main class="container d-flex flex-column min-vh-100 justify-content-center p-6 rounded">
+    <main class="container d-flex flex-column min-vh-100 justify-content-center p-8 rounded">
         <h1 class="site-heading">blog</h1>
         <?php
         $args = array('numberposts' => '20');
