@@ -1,9 +1,3 @@
-<?php $debug = false;
-if ($debug) {
-    wp_safe_redirect(home_url());
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +20,7 @@ if ($debug) {
             printf(
                 '<li class="blog d-flex flex-column list-group-item p-2 mt-4 rounded">
                     <a class="fs-4 fw-bold" href="%1$s">%2$s</a>
-                    <div class="mt-2 meta-data">%3$s | </div>
+                    <div class="mt-2 meta-data">%3$s</div>
                 </li>',
                 esc_url(get_permalink($recent['ID'])),
                 apply_filters('the_title', $recent['post_title'], $recent['ID']),

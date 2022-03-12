@@ -22,6 +22,7 @@ body {
   font-family: "Fira Sans", sans-serif;
   user-select: none;
   -webkit-user-select: none;
+  overflow-y: scroll;
 }
 
 #header {
@@ -204,4 +205,30 @@ p > .a-date,
   border: transparent;
   cursor: pointer;
   outline: 0;
+}
+
+/** New theme style **/
+.logo {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) !important;
+  left: 3%;
+}
+
+.logo > img {
+  width: 100%;
+  height: auto;
+  max-width: 20px;
+}
+
+.container-fluid {
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+main {
+  clear: both;
+  position: relative;
+  min-height: calc(100vh - 145px);
 }

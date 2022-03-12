@@ -17,24 +17,27 @@ if ($debug) {
 
 <body>
     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/s.svg" class="bg img-responsive container-sm-auto">
-    <main class="container d-flex flex-column vh-100 justify-content-center p-3 m-auto">
-        <h1 class="site-heading">impressum</h1>
-        <h2 className="heading-2">Kommunalbündnis Recke n.e.V.</h2>
+    <main class="container d-flex flex-column vh-100 justify-content-center p-3">
+        <div>
+            <h1 class="site-heading">impressum</h1>
+            <h2 className="heading-2">Kommunalbündnis Recke n.e.V.</h2>
 
-        <p className="adress">
-            Buchholzstraße 18b <br></br>
-            49509 Recke
-        </p>
-        <p className="contact">
-            <i class="fas fa-envelope"></i> kbr@kommunalbuendnis-recke.de<br></br>
-            <i class="fas fa-phone-alt"></i> +49 (0) 5453 / 932470
-        </p>
-        <h2 className="heading-3">Vertretungsberechtigter Vorstand</h2>
-        <p>Jürgen Visse</p>
-        <p>Ole Stecker-Schürmann</p>
+            <p className="adress">
+                Buchholzstraße 18b <br></br>
+                49509 Recke
+            </p>
+            <p className="contact">
+                <i class="fas fa-envelope"></i> kbr@kommunalbuendnis-recke.de<br></br>
+                <i class="fas fa-phone-alt"></i> +49 (0) 5453 / 932470
+            </p>
+            <h2 className="heading-3">Vertretungsberechtigter Vorstand</h2>
+            <p>Jürgen Visse</p>
+            <p>Ole Stecker-Schürmann</p>
         </div>
+        
+        </div>
+        <?php get_footer(); ?>
     </main>
-    <?php get_footer(); ?>
 
 </body>
 
