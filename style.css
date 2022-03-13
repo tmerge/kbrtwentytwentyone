@@ -109,7 +109,12 @@ hr {
 }
 
 .social-link a {
+  color: lightgray;
+}
+
+.social-link a:hover {
   color: orange;
+  transform: scale(1.5);
 }
 
 /* post related style */
