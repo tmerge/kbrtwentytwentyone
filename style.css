@@ -1,6 +1,6 @@
 /*
 Theme Name: KBR Twenty Twenty-One
-Theme URI: https://tilmerge.xyz/kbrtto/
+Theme URI: https://wordpress.kbr.social/
 Author: Til Merge
 Author URI: https://tilmerge.xyz/
 Description: The new template for Kommunal Bündnis Recke, mit neuem Logo.
@@ -89,6 +89,29 @@ hr {
 .card {
   width: auto;
 }
+/* social-bar */
+.social-bar {
+  position: fixed;
+  top: 50%;
+  text-align: center;
+  right: 3%;
+  transform: translate(50%, -50%);
+}
+
+.social-bar ul {
+  padding: 0;
+  list-style: none;
+}
+
+.social-link {
+  font-size: 36px;
+  padding-top: 20px;
+}
+
+.social-link a {
+  color: orange;
+}
+
 /* post related style */
 .post-container {
   z-index: 20;
@@ -131,6 +154,17 @@ hr {
 }
 
 /* footer stuff */
+footer {
+  border-top: 1px solid lightgrey;
+  padding: 19px 0;
+  color: lightgray;
+}
+
+.footer-menu {
+  margin-left: 13%;
+  float: left;
+}
+
 .footer-item {
   margin-left: 5px;
 }
@@ -139,7 +173,7 @@ hr {
 }
 .footer-item a {
   text-decoration: none;
-  color: white;
+  color: lightgray;
 }
 .footer-item a:hover {
   color: #0094a2;
