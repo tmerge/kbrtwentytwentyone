@@ -162,7 +162,7 @@ hr {
 footer {
   border-top: 1px solid lightgrey;
   padding: 19px 0;
-  color: lightgray;
+  color: gray;
 }
 
 .footer-menu {
@@ -178,7 +178,7 @@ footer {
 }
 .footer-item a {
   text-decoration: none;
-  color: lightgray;
+  color: gray;
 }
 .footer-item a:hover {
   color: #0094a2;
@@ -224,11 +224,7 @@ p > .a-date,
 .a-place {
   font-size: 18px !important;
 }
-/* nav link */
-.nav-link {
-  font-family: "Fira Sans", sans-serif;
-  color: white !important;
-}
+
 /* search */
 .search-bar form {
   position: relative;
@@ -251,7 +247,7 @@ p > .a-date,
   position: fixed;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%);
   left: 3%;
 }
 
@@ -265,9 +261,60 @@ p > .a-date,
   padding-left: 6%;
   padding-right: 6%;
 }
-
+@media (min-width: 1200px) {
+  main {
+    padding-top: 86px;
+  }
+}
 main {
   clear: both;
   position: relative;
   min-height: calc(100vh - 145px);
+}
+
+/* navbar stuff */
+.nav-header {
+  padding: 0 10px;
+  left: 0;
+  right: 0;
+  z-index: 1002;
+}
+.navbar {
+  height: 100%;
+  display: flex;
+  position: relative;
+  top: 0;
+  opacity: 1;
+  padding: 0 8px;
+  overflow: initial;
+  color: black;
+  z-index: 100;
+}
+/* nav link */
+.nav-link {
+  font-family: "Fira Sans", sans-serif;
+}
+
+@media (min-width: 1200px) {
+  .nav-header {
+    position: fixed;
+    padding: 0 6%;
+  }
+  .nav-header::after {
+    content: "";
+    display: block;
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+}
+/* nav menu */
+.nav-menu {
+  display: flex;
+  position: relative;
+  top: 0;
+  opacity: 1;
+  padding: 0 8px;
+  overflow: initial;
 }

@@ -12,26 +12,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light mr-auto fixed-top">
-        <div class="container-fluid">
-            <div class="collapse navbar-collapse mr-auto" id="navbarToggler">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/blog">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/media">Media</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/politik">Politik</a>
-                        </li>
-                    </ul>
-            </div>
-        </div>
-    </nav>
+    <?php get_template_part('template-parts/nav'); ?>
 </body>
 
 </html>

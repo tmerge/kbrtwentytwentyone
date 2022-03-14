@@ -17,13 +17,16 @@
 </head>
 <body>
     <div class="logo">
-        <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/KBR_Logo.png" alt="KBR Logo" class="img-fluid"></a>
+        <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/KBR_Logo_rotate.png" alt="KBR Logo" class="img-fluid"></a>
     </div>
     <div class="container-fluid">
-        <div class="header"><?php include(get_template_directory_uri() . '/template-parts/nav.php'); ?></div>
-        <main class="min-vh-100 pt-4 bg-warning">
-            <div class="hero"></div>
-            testo
+        <div class="nav-header bg-red">
+            <?php get_template_part( 'template-parts/nav'); ?>
+        </div>
+        <main>
+            <div class="hero">
+                <div class="min-vh-100 bg-primary"></div>
+            </div>
             <section class="min-vh-100">
                 section1
             </section>
@@ -32,7 +35,7 @@
             </section>
         </main>
     </div>
-    <div class="social-bar align-items-center text-center" id="social">
+    <div class="social-bar align-items-center text-center mt-4" id="social">
         <ul>
             <li class="social-link">
                 <a href="https://www.instagram.com/kommunalbuendnis_recke/"><i class="fab fa-instagram"></i></a>
