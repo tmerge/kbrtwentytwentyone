@@ -10,9 +10,4 @@
         <title>KBR | <?php wp_title(); ?></title>
     <?php endif?>
 </head>
-
-<body>
-    <?php get_template_part('template-parts/nav'); ?>
-</body>
-
 </html>

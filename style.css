@@ -18,11 +18,18 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 body {
   background-size: cover;
-  color: white;
+  color: black;
   font-family: "Fira Sans", sans-serif;
   user-select: none;
   -webkit-user-select: none;
   overflow-y: scroll;
+  margin: 0 !important;
+  padding: 0 !important;
+  outline: 0;
+}
+
+a {
+  color: gray;
 }
 
 #header {
@@ -35,6 +42,322 @@ body {
 
 hr {
   display: none;
+}
+
+/* navbar header / menu */
+@media (min-width: 1200px) {
+  .menu-header {
+    position: fixed;
+    padding: 0 6% !important;
+  }
+
+  .menu-header::before {
+    right: 100%;
+    content: "";
+    display: block;
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+
+  .menu-header::after {
+    left: 100%;
+    content: "";
+    display: block;
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: white;
+  }
+
+  .menu-header .menu-right-header {
+    display: block !important;
+    right: 6% !important;
+  }
+
+  .menu {
+    display: flex;
+    position: relative;
+    top: 0;
+    opacity: 1;
+    padding: 0 8px;
+    overflow: initial;
+  }
+
+  .menu > .item {
+    display: inline-block;
+    border-bottom: 0 !important;
+    padding: 0 8px 0 0 !important;
+  }
+
+  .menu > .item::after {
+    content: "|";
+    color: gray;
+    font-size: 13px;
+    margin: 0px 0 0 8px;
+  }
+
+  .menu > .item > a {
+    display: inline-block !important;
+    padding: 28px 0 !important;
+  }
+}
+
+.menu-header {
+  padding: 0 10px;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 1002;
+}
+
+.menu-header .menu-right-header {
+  position: absolute;
+  top: 0;
+  right: 8px;
+  padding: 27.5px 0;
+  display: none;
+  z-index: 104;
+}
+
+.menu-header .menu-right {
+  float: right;
+}
+
+.menu-header .menu-right > .item {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.menu-header .menu-right > .item i {
+  line-height: 3rem;
+}
+
+.menu-header .search-bar {
+  float: right;
+  margin-right: 10px;
+  max-width: 140px;
+}
+
+.search-bar .w {
+  position: relative;
+  border-bottom: 1px solid lightgray;
+  max-width: 250px;
+  width: 100%;
+  float: right;
+  transition: width 800ms ease-in-out;
+}
+
+.search-bar .w::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0%;
+  height: 2px;
+  background-color: orange;
+  transform: scale(0, 1);
+  transition: all 0.2s linear;
+}
+
+.search-bar .tb {
+  float: left;
+  width: 100%;
+  padding-right: 25px;
+}
+
+.search-bar .tb input {
+  line-height: 3rem;
+  border: none !important;
+  width: 100%;
+}
+
+.search-bar .tb input:focus {
+  outline: none !important;
+  padding: 0 !important;
+}
+
+.search-bar .icon {
+  position: absolute;
+  right: 0;
+  background: none;
+}
+
+.search-bar .icon i {
+  color: gray;
+  font-size: 18px;
+  line-height: 3rem;
+}
+
+.search-bar button {
+  background: none;
+}
+
+.menu {
+  user-select: none;
+  -webkit-user-select: none;
+}
+.menu > .item {
+  padding: 0;
+  border-bottom: 1px solid gray;
+}
+
+.menu > .item > a {
+  line-height: 3rem;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+}
+
+.item.sub-item .sub-menu {
+  position: absolute;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s 0.3s;
+}
+
+.item.sub-item:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease 0.5s, visibility 0s 0.5s;
+}
+
+@media (min-width: 1400px) {
+  .menu > .item::after {
+    margin: 0px 0 0 15px;
+  }
+}
+/* sub menu */
+.sub-item > a::after {
+  content: "\f0d7";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  color: lightgray;
+  margin: 0 0 0 5px;
+  display: inline-block;
+  transition: transform 0.4s ease;
+}
+@media (min-width: 1200px) {
+  .sub-menu-bg {
+    display: block !important;
+  }
+
+  .sub-menu-wrapper {
+    background-color: white;
+    width: 25%;
+    padding: 50px 0 50px 60px;
+    min-height: 520px;
+  }
+
+  .sub-menu-header {
+    display: block !important;
+    font-size: 18px;
+    line-height: 3rem;
+    margin-bottom: 30px;
+  }
+
+  .sub-menu-item-link {
+    padding: 18px 0;
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+  }
+
+  .sub-menu-item-link:hover {
+    color: #0094a2;
+  }
+
+  .sub-menu-item-link::before {
+    content: "";
+    background: lightgray;
+    height: 1px;
+    width: 80%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.sub-menu-bg {
+  position: absolute;
+  width: 75%;
+  height: 100%;
+  background-size: cover;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  z-index: -5;
+  opacity: 1;
+  left: 25%;
+}
+
+.sub-menu {
+  width: 100%;
+  left: 0;
+  display: none;
+}
+
+.sub-menu-header {
+  display: none;
+}
+
+.sub-menu-item-link {
+  display: block;
+  padding: 5px 15px 5px 15px;
+  margin-bottom: 10px;
+  position: relative;
+  line-height: 3rem;
+}
+
+/* main */
+@media (min-width: 1200px) {
+  .container-fluid {
+    padding-left: 6% !important;
+    padding-right: 6% !important;
+  }
+}
+
+.container-fluid {
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* main */
+@media (min-width: 1200px) {
+  main {
+    padding-top: 86px;
+  }
+}
+main {
+  clear: both;
+  position: relative;
+  min-height: calc(100vh - 177px);
+}
+
+/* sections DEBUG */
+.hero {
+  width: 100%;
+  min-height: calc(100vh - 177px);
+}
+
+.hero img {
+  width: 100%;
+  height: calc(100vh);
+  background-size: cover;
+}
+
+section {
+  min-height: 100vh;
 }
 
 .bg {
@@ -52,20 +375,6 @@ hr {
   top: 5%;
   width: 80%;
   height: 80%;
-}
-
-.container-fluid i {
-  font-size: 36px;
-  margin: 5px;
-}
-
-.container-fluid i:hover {
-  transform: scale(1.5);
-  color: #0094a2;
-}
-
-.social-link {
-  color: white;
 }
 
 .card-header {
@@ -161,13 +470,14 @@ hr {
 /* footer stuff */
 footer {
   border-top: 1px solid lightgrey;
-  padding: 19px 0;
   color: gray;
 }
 
 .footer-menu {
   margin-left: 13%;
   float: left;
+  display: flex;
+  padding: 19px 0;
 }
 
 .footer-item {
@@ -255,66 +565,4 @@ p > .a-date,
   width: 100%;
   height: auto;
   max-width: 20px;
-}
-
-.container-fluid {
-  padding-left: 6%;
-  padding-right: 6%;
-}
-@media (min-width: 1200px) {
-  main {
-    padding-top: 86px;
-  }
-}
-main {
-  clear: both;
-  position: relative;
-  min-height: calc(100vh - 145px);
-}
-
-/* navbar stuff */
-.nav-header {
-  padding: 0 10px;
-  left: 0;
-  right: 0;
-  z-index: 1002;
-}
-.navbar {
-  height: 100%;
-  display: flex;
-  position: relative;
-  top: 0;
-  opacity: 1;
-  padding: 0 8px;
-  overflow: initial;
-  color: black;
-  z-index: 100;
-}
-/* nav link */
-.nav-link {
-  font-family: "Fira Sans", sans-serif;
-}
-
-@media (min-width: 1200px) {
-  .nav-header {
-    position: fixed;
-    padding: 0 6%;
-  }
-  .nav-header::after {
-    content: "";
-    display: block;
-    width: 20%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-  }
-}
-/* nav menu */
-.nav-menu {
-  display: flex;
-  position: relative;
-  top: 0;
-  opacity: 1;
-  padding: 0 8px;
-  overflow: initial;
 }

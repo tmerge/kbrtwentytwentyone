@@ -12,26 +12,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri();?>/assets/kbr_favicon.ico" />
-    <title>Kommunal Bündnis Recke | ...weil es um Reck geht!</title>
-    <?php wp_head(); ?>
+    <title>KBR | ...weil es um Reck geht!</title>
+    <?php get_header(); ?>
 </head>
 <body>
     <div class="logo">
         <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/KBR_Logo_rotate.png" alt="KBR Logo" class="img-fluid"></a>
     </div>
     <div class="container-fluid">
-        <div class="nav-header bg-red">
+        <div class="menu-header">
             <?php get_template_part( 'template-parts/nav'); ?>
         </div>
         <main>
             <div class="hero">
-                <div class="min-vh-100 bg-primary"></div>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/s.svg" class="">
             </div>
-            <section class="min-vh-100">
+            <section>
                 section1
-            </section>
-            <section class="min-vh-100">
-                section2
             </section>
         </main>
     </div>
