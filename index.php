@@ -9,15 +9,15 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri();?>/assets/kbr_favicon.ico" />
     <title>KBR | ...weil es um Reck geht!</title>
     <?php get_header(); ?>
 </head>
-<body>
+<body class="desktop">
+    <div class="mobile-menu-header">
+        
+    </div>
     <div class="logo">
-        <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/KBR_Logo_rotate.png" alt="KBR Logo" class="img-fluid"></a>
+        <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/KBR_Logo_rotate.png" alt="KBR Logo"></a>
     </div>
     <div class="container-fluid">
         <div class="menu-header">
@@ -46,6 +46,7 @@
         </ul>
     </div>
     <?php get_footer(); ?>
+    <div class="overlay"></div>
 </body>
 </html>
 

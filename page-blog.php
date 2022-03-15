@@ -15,7 +15,7 @@
     <title>KBR | Blog</title>
     <?php get_header(); ?>
 </head>
-<body>
+<body class="desktop">
     <div class="logo">
         <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/KBR_Logo_rotate.png" alt="KBR Logo" class="img-fluid"></a>
     </div>

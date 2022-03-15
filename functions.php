@@ -14,9 +14,7 @@ function wpbootstrap_enqueue_styles() {
     if(is_page('Blog')) {
         wp_enqueue_style('blog_css', get_template_directory_uri() . '/assets/css/module.blog.css');
     }
-    if( is_page( array( 'Startseite') ) ){
-        wp_enqueue_script( 'kbrscript', get_template_directory_uri() . '/assets/js/kbrscript.js');
-    }
+    //wp_enqueue_script( 'kbrscript', get_template_directory_uri() . '/assets/js/kbrscript.js');
     }
 add_action('wp_enqueue_scripts', 'wpbootstrap_enqueue_styles');
 
