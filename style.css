@@ -77,7 +77,7 @@ hr {
 }
 
 .logo {
-  position: absolute !important;
+  position: absolute;
   width: 50px;
   top: 0;
   left: 0;
@@ -212,7 +212,7 @@ hr {
 
 /* menu open */
 .menu-open .menu-header {
-  display: block;
+  display: block !important;
 }
 
 .menu-mobile .menu-header {
@@ -224,7 +224,7 @@ hr {
   left: 0;
   right: 0;
   z-index: 103;
-  border-top: 1px solid gray;
+  border-top: 1px solid lightgray;
   display: none;
   padding: 0 0 20px 0;
 }
@@ -257,6 +257,30 @@ hr {
 
 .menu-header .menu-right > .item i {
   line-height: 3rem;
+}
+
+/* sign language TODO: implement later on */
+.sign-lang:hover {
+  transform: scale(1.5);
+  color: #0094a2;
+}
+
+.member {
+  background-color: orange;
+  color: white;
+  border-radius: 50em;
+  height: 25px;
+  outline: none;
+  border: none;
+}
+
+.member:hover {
+  transform: scale(1.2) rotate(-5deg);
+  transition: scale 0.4s ease-in-out;
+}
+
+.member:focus {
+  background-color: lightcoral;
 }
 
 .menu-header .search-bar {
@@ -326,7 +350,7 @@ hr {
 }
 .menu > .item {
   padding: 0;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid lightgray;
 }
 
 .menu > .item > a {
@@ -354,23 +378,26 @@ hr {
   transition: opacity 0.3s ease 0.5s, visibility 0s 0.5s;
 }
 
+.item.sub-item:hover i {
+  transform: rotate(180deg);
+  transition: transform 0.7s ease-in-out;
+  color: #0094a2;
+}
+
 @media (min-width: 1400px) {
   .menu > .item::after {
     margin: 0px 0 0 15px;
   }
 }
 /* sub menu */
-.sub-item > a::after {
-  content: "\f0d7";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
+.sub-item > i {
   text-decoration: none;
   color: lightgray;
   margin: 0 0 0 5px;
   display: inline-block;
   transition: transform 0.4s ease;
 }
+
 @media (min-width: 1200px) {
   .sub-menu-bg {
     display: block !important;

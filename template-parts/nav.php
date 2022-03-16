@@ -8,12 +8,13 @@
             <div class="sub-menu-bg" style="background-image: url(https://wordpress.kbr.social/wp-content/themes/kbrtwentytwentyone/assets/img/media.jpg)"></div>
             <div class="sub-menu-wrapper">
                 <div class="sub-menu-header">Medienportal</div>
-                <div class="sub-menu-item"><a class="sub-menu-item-link" href="/media/grafiken">Grafiken</a></div>
+                <div class="sub-menu-item"><a class="sub-menu-item-link" href="/media/bilder">Bilder</a></div>
                 <div class="sub-menu-item"><a class="sub-menu-item-link" href="/media/videos">Videos</a></div>
                 <div class="sub-menu-item"><a class="sub-menu-item-link" href="/media/flyer">Flyer</a></div>
                 <div class="sub-menu-item"><a class="sub-menu-item-link" href="/media/podcasts">Podcats</a></div>
             </div>
         </div>
+        <i class="fas fa-caret-down"></i>
     </div>
     <div class="item sub-item">
         <a href="/politik">Politik</a>
@@ -27,6 +28,7 @@
                 <div class="sub-menu-item"><a class="sub-menu-item-link" href="/politik/antraege">Anträge</a></div>
             </div>
         </div>
+        <i class="fas fa-caret-down"></i>
     </div>
     <div class="item">
         <a href="/ueberuns">Über uns</a>
@@ -35,6 +37,8 @@
 <div class="menu-right-header">
     <div class="menu-right">
         <div class="item light-toggle"><i class="fa fa-toggle-on"></i></div>
+        <div class="item sign-lang"><i class="fas fa-sign-language"></i></div>
+        <button class="member">Mitglied werden <i class="fas fa-check"></i></button>
     </div>
     <div class="search-bar">
         <form action="" method="GET">

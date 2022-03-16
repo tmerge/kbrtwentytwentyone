@@ -29,4 +29,25 @@ window.onload = () => {
     toggle = !toggle;
   });
 
+  // set menu mode based on vw (inital)
+  let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+  if (vw < 1200) {
+    body.classList.add('menu-mobile');
+    body.classList.remove('menu-desktop');
+  } else {
+    body.classList.add('menu-desktop');
+    body.classList.remove('menu-mobile');
+  }
+
+  // check for view resize
+  window.addEventListener('resize', (event) => {
+    let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+    if (vw < 1200) {
+      body.classList.add('menu-mobile');
+      body.classList.remove('menu-desktop');
+    } else {
+      body.classList.add('menu-desktop');
+      body.classList.remove('menu-mobile');
+    }
+  });
 };

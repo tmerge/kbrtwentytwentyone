@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <title>KBR | ...weil es um Reck geht!</title>
+    <title>KBR | ...weil es um Recke geht!</title>
     <?php get_header(); ?>
 </head>
 <body id="body" class="desktop menu-mobile">
@@ -30,7 +30,7 @@
         </div>
         <main>
             <div class="hero">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/s.svg" class="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/s.svg">
             </div>
             <section>
                 section1
