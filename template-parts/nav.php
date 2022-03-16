@@ -34,7 +34,7 @@
 </nav>
 <div class="menu-right-header">
     <div class="menu-right">
-        <div class="item light-toggle"><i class="fa fa-toggle-off"></i></div>
+        <div class="item light-toggle"><i class="fa fa-toggle-on"></i></div>
     </div>
     <div class="search-bar">
         <form action="" method="GET">

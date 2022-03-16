@@ -18,7 +18,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 body {
   background-size: cover;
-  color: black;
+  color: gray;
   font-family: "Fira Sans", sans-serif;
   user-select: none;
   -webkit-user-select: none;
@@ -48,32 +48,105 @@ hr {
   body > .logo {
     display: none;
   }
+
   .logo {
-    top: 50%;
-    left: 15px;
+    top: 50% !important;
+    left: 40px !important;
     margin-top: -8px;
+  }
+
+  .logo img {
+    display: block;
+    width: 165px;
+    height: auto;
+    transform: scale(1.5);
+  }
+
+  .menu-toggle {
+    right: 15px;
   }
 }
 
 @media (min-width: 1200px) {
   .logo {
     position: fixed !important;
-    top: 50%;
+    top: 50% !important;
     transform: translate(-50%, -50%);
-    left: 3%;
-    transform: scale(1.25);
+    left: 3% !important;
   }
 }
 
 .logo {
-  position: absolute;
-  width: 23px;
+  position: absolute !important;
+  width: 50px;
   top: 0;
   left: 0;
 }
 
-.logo img {
-  transform: scale(2.25) !important;
+@media (min-width: 1200px) {
+  .menu-toggle {
+    right: 15px;
+  }
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  z-index: 999;
+  cursor: pointer;
+  text-decoration: none;
+  width: 28px;
+  height: 30px;
+  margin-top: -15px;
+  transition: all 0.2s ease;
+}
+.menu-toggle > div {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: gray;
+  width: 28px;
+  height: 3px;
+  margin: -1.5px 0 0 0;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.menu-open .menu-toggle > div {
+  background: white;
+}
+
+.menu-toggle > div::before {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: gray;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.menu-open .menu-toggle > div::before {
+  transform: rotate(45deg) translate(-6px, -7px);
+}
+
+.menu-toggle > div::after {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: gray;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.menu-open .menu-toggle > div::after {
+  transform: rotate(-45deg) translate(-6px, 6px);
 }
 
 /* navbar header / menu */
@@ -135,6 +208,25 @@ hr {
     display: inline-block !important;
     padding: 28px 0 !important;
   }
+}
+
+/* menu open */
+.menu-open .menu-header {
+  display: block;
+}
+
+.menu-mobile .menu-header {
+  position: fixed;
+  width: 100%;
+  top: 70px;
+  height: calc(100% - 70px);
+  overflow-y: auto;
+  left: 0;
+  right: 0;
+  z-index: 103;
+  border-top: 1px solid gray;
+  display: none;
+  padding: 0 0 20px 0;
 }
 
 .menu-header {
@@ -357,6 +449,12 @@ hr {
 @media (min-width: 1200px) {
   .mobile-menu-header {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-header {
+    height: 50px;
   }
 }
 
@@ -616,19 +714,4 @@ p > .a-heading {
 p > .a-date,
 .a-place {
   font-size: 18px !important;
-}
-
-/** New theme style **/
-.logo {
-  position: fixed;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  left: 3%;
-}
-
-.logo > img {
-  width: 100%;
-  height: auto;
-  max-width: 20px;
 }

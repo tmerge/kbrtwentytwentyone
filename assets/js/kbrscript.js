@@ -16,4 +16,17 @@ window.onload = () => {
         hover = true;
       }
     }*/
+  // get menu toggle
+  let body = document.getElementById('body');
+  let menuToggle = document.getElementsByClassName('menu-toggle')[0];
+  let toggle = false;
+  menuToggle.addEventListener('click', (event) => {
+    if (toggle) {
+      body.classList.remove('menu-open');
+    } else {
+      body.classList.add('menu-open');
+    }
+    toggle = !toggle;
+  });
+
 };
