@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <title>KBR | ...weil es um Recke geht!</title>
+    <title>KBR | 404</title>
     <?php get_header(); ?>
 </head>
 <body id="body" class="desktop menu-mobile">

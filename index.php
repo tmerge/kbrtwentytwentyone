@@ -51,7 +51,7 @@
         </ul>
     </div>
     <?php get_footer(); ?>
-    <div class="overlay"></div>
+    <div id="overlay" class="overlay"></div>
 </body>
 </html>
 

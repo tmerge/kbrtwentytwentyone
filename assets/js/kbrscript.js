@@ -16,6 +16,25 @@ window.onload = () => {
         hover = true;
       }
     }*/
+  // set overlay on open menu
+  let subitems = document.getElementsByClassName('item sub-item');
+  console.log(subitems)
+  let overlay = document.getElementById('overlay');
+  for (let i = 0; i < subitems.length; i++) {
+    subitems[i].addEventListener('mouseover', (e) => {
+      console.log("over");
+      overlay.classList.add('is-visible');
+    });
+    subitems[i].addEventListener('mouseout', (e) => {
+      console.log("out");
+      overlay.classList.remove('is-visible');
+    });
+  }
+  /*subitem.addEventListener('mouseover', (e) => {
+    console.log("over");
+    overlay.classList.add('is-visible');
+  });*/
+
   // get menu toggle
   let body = document.getElementById('body');
   let menuToggle = document.getElementsByClassName('menu-toggle')[0];
