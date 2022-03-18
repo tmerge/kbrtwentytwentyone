@@ -652,21 +652,6 @@ section {
   display: none;
 }
 
-/* post related style */
-.post-container {
-  z-index: 20;
-  padding: 20px;
-  background: #ebebeb;
-  border-radius: 25px 25px 25px 25px;
-  color: black;
-}
-.post-container a {
-  color: black;
-}
-.post-container a:hover {
-  color: #0094a2;
-}
-
 /* x-small devices */
 @media (min-width: 300px) {
   h1 {

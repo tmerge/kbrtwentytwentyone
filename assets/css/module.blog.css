@@ -1,3 +1,26 @@
-.blog {
-  color: red;
+.blog-wrapper {
+  padding: 6%;
+}
+
+.blog-title {
+  font-size: large;
+}
+
+.blog-wrapper li {
+  display: flex;
+}
+
+/* post related style */
+.post-container {
+  z-index: 20;
+  padding: 20px;
+  background: #ebebeb;
+  border-radius: 25px 25px 25px 25px;
+  color: black;
+}
+.post-container a {
+  color: black;
+}
+.post-container a:hover {
+  color: #0094a2;
 }

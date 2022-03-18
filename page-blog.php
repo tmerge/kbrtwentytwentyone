@@ -31,16 +31,17 @@
         <div class="menu-header">
             <?php get_template_part( 'template-parts/nav'); ?>
         </div>
-        <main>
-        <h1 class="site-heading">Blog</h1>
+        <main class="blog-wrapper">
+            <h3 class="blog-title">Blog</h3>
+            <div clas="blog-container">
             <?php
             echo(get_the_author_meta('user_email', 2));
             $args = array('numberposts' => '20');
             $recent_posts = wp_get_recent_posts($args);
             foreach ($recent_posts as $recent) {
                 printf(
-                    '<li class="blog d-flex flex-column list-group-item p-2 mt-4 rounded">
-                        <a class="fs-4 fw-bold" href="%1$s">%2$s</a>
+                    '<li class="">
+                        <a class="" href="%1$s">%2$s</a>
                         <div class="mt-2 meta-data">%3$s</div>
                     </li>',
                     esc_url(get_permalink($recent['ID'])),
@@ -49,6 +50,7 @@
                 );
             }
             ?>
+            </div>
         </main>
     </div>
     <div class="social-bar align-items-center text-center mt-4" id="social">
@@ -65,6 +67,6 @@
         </ul>
     </div>
     <?php get_footer(); ?>
-    <div class="overlay"></div>
+    <div id="overlay" class="overlay"></div>
 </body>
 </html>

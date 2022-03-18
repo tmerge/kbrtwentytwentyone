@@ -37,7 +37,7 @@
             </section>
         </main>
     </div>
-    <div class="social-bar align-items-center text-center mt-4" id="social">
+    <div class="social-bar" id="social">
         <ul>
             <li class="social-link">
                 <a href="https://www.instagram.com/kommunalbuendnis_recke/"><i class="fab fa-instagram"></i></a>
