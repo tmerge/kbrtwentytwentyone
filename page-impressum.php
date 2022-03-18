@@ -22,7 +22,15 @@ if ($debug) {
     <?php get_header(); ?>
 </head>
 
-<body class="desktop">
+<body id="body" class="desktop menu-mobile">
+    <div class="mobile-menu-header">
+        <div class="logo">
+            <a href="https://wordpress.kbr.social"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/KBR_Logo.png" alt="KBR Logo"></a>
+        </div>
+        <div class="menu-toggle">
+            <div></div>
+        </div>
+    </div>
     <div class="logo">
         <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/KBR_Logo_rotate.png" alt="KBR Logo" class="img-fluid"></a>
     </div>
