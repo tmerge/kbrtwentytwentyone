@@ -398,6 +398,10 @@ hr {
   transition: transform 0.4s ease;
 }
 
+.menu-open .sub-item > i {
+  float: right;
+}
+
 @media (min-width: 1200px) {
   .sub-menu-bg {
     display: block !important;
@@ -481,13 +485,27 @@ hr {
 
 @media (max-width: 768px) {
   .mobile-menu-header {
-    height: 50px;
+    height: 50px !important;
+  }
+
+  .menu-mobile .menu-header {
+    top: 50px;
+    height: calc(100% - 50px);
   }
 }
 
 .mobile-menu-header {
   position: relative;
   height: 70px;
+}
+
+body.menu-open.menu-mobile .mobile-menu-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 500;
+  background: white;
 }
 
 /* overlay */

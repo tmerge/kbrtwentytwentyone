@@ -9,4 +9,4 @@
  *
  */
 echo "page.php";
-wp_safe_redirect(home_url());
+echo wp_title();
