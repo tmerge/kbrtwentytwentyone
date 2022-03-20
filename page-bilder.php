@@ -1,13 +1,17 @@
+<?php
+/**
+ * The main template file.
+ *
+ * This is the most generic template file in a WordPress theme
+ * @link    https://tilmerge.xyz/
+ */
+?>
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KBR | <?php the_title(); ?></title>
+    <title>KBR | ...weil es um Recke geht!</title>
     <?php get_header(); ?>
 </head>
-
 <body id="body" class="desktop menu-mobile">
     <div class="mobile-menu-header">
         <div class="logo">
@@ -25,12 +29,26 @@
             <?php get_template_part( 'template-parts/nav'); ?>
         </div>
         <main>
-            <div class="post-wrapper">
-                <h2 class="post-head"><?php the_title(); ?></h2>
-                <div class="post-content"><?php the_content(); ?></div>
-            </div>
-            <div class="comment-wrapper">
-             <!-- TODO: implement comment functionality -->
+            <h1>Bilder</h1>
+            <div class="gallery">
+                <?php 
+                $query_images_args = array(
+                    'post_type'      => 'attachment',
+                    'post_mime_type' => 'image',
+                    'post_status'    => 'inherit',
+                    'posts_per_page' => - 1,
+                );
+                
+                $query_images = new WP_Query( $query_images_args );
+                
+                $images = array();
+                foreach ( $query_images->posts as $image ) {
+                    $images[] = wp_get_attachment_url( $image->ID );
+                }
+                foreach($images as $img) {
+                    echo  '<img class="gallery-item" src=' . $img . '></img>';
+                }
+                ?>
             </div>
         </main>
     </div>
@@ -51,3 +69,4 @@
     <div id="overlay" class="overlay"></div>
 </body>
 </html>
+

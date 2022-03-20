@@ -1,13 +1,17 @@
+<?php
+/**
+ * The main template file.
+ *
+ * This is the most generic template file in a WordPress theme
+ * @link    https://tilmerge.xyz/
+ */
+?>
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KBR | <?php the_title(); ?></title>
+    <title>KBR | Mitgliedsantrag</title>
     <?php get_header(); ?>
 </head>
-
 <body id="body" class="desktop menu-mobile">
     <div class="mobile-menu-header">
         <div class="logo">
@@ -15,7 +19,7 @@
         </div>
         <div class="menu-toggle">
             <div></div>
-        </div>
+        </div>file
     </div>
     <div class="logo">
         <a href="https://wordpress.kbr.social"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/KBR_Logo_rotate.png" alt="KBR Logo"></a>
@@ -25,13 +29,7 @@
             <?php get_template_part( 'template-parts/nav'); ?>
         </div>
         <main>
-            <div class="post-wrapper">
-                <h2 class="post-head"><?php the_title(); ?></h2>
-                <div class="post-content"><?php the_content(); ?></div>
-            </div>
-            <div class="comment-wrapper">
-             <!-- TODO: implement comment functionality -->
-            </div>
+            
         </main>
     </div>
     <div class="social-bar" id="social">
@@ -51,3 +49,4 @@
     <div id="overlay" class="overlay"></div>
 </body>
 </html>
+

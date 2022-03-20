@@ -706,6 +706,50 @@ footer {
   transform: scale(1.5);
 }
 
+/* post stuff */
+@media (min-width: 1200px) {
+  .post-wrapper {
+    width: 80%;
+    padding-top: 6% !important;
+    padding-left: 6% !important;
+    padding-right: 6% !important;
+  }
+}
+
+.post-wrapper {
+  padding: 30px 20px 10px 20px;
+  color: black;
+}
+
+.post-head {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.post-content {
+  text-align: justify;
+}
+
+/* gallery */
+@media (min-width: 1200px) {
+  .gallery {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: masonary;
+    gap: 1em;
+    align-items: start;
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+}
+
+.gallery {
+  display: block;
+}
+/*.gallery-item {
+  display: flex;
+}*/
+
 /* announcement */
 .an {
   position: absolute;

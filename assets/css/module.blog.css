@@ -11,7 +11,7 @@
 }
 
 /* post related style */
-.post-container {
+.post-wrapper {
   z-index: 20;
   padding: 20px;
   background: #ebebeb;

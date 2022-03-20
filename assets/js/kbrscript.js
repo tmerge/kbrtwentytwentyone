@@ -17,19 +17,24 @@ window.onload = () => {
       }
     }*/
   // set overlay on open menu
+  let body = document.getElementById('body');
   let subitems = document.getElementsByClassName('item sub-item');
   let overlay = document.getElementById('overlay');
-  for (let i = 0; i < subitems.length; i++) {
-    subitems[i].addEventListener('mouseover', (e) => {
-      overlay.classList.add('is-visible');
-    });
-    subitems[i].addEventListener('mouseout', (e) => {
-      overlay.classList.remove('is-visible');
-    });
+
+  if (body.classList.contains('menu-desktop')) {
+    console.log("not contains mobile");
+    for (let i = 0; i < subitems.length; i++) {
+      subitems[i].addEventListener('mouseover', (e) => {
+        overlay.classList.add('is-visible');
+      });
+      subitems[i].addEventListener('mouseout', (e) => {
+        overlay.classList.remove('is-visible');
+      });
+    }
   }
 
   // get menu toggle
-  let body = document.getElementById('body');
+
   let menuToggle = document.getElementsByClassName('menu-toggle')[0];
   let toggle = false;
   menuToggle.addEventListener('click', (event) => {

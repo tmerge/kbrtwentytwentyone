@@ -19,7 +19,7 @@
         </div>
         <div class="menu-toggle">
             <div></div>
-        </div>
+        </div>file
     </div>
     <div class="logo">
         <a href="https://wordpress.kbr.social"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/KBR_Logo_rotate.png" alt="KBR Logo"></a>
