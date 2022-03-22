@@ -14,8 +14,7 @@
 .post-wrapper {
   z-index: 20;
   padding: 20px;
-  background: #ebebeb;
-  border-radius: 25px 25px 25px 25px;
+  background: white;
   color: black;
 }
 .post-container a {
@@ -23,4 +22,30 @@
 }
 .post-container a:hover {
   color: #0094a2;
+}
+
+.post-head {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.post-content {
+  text-align: justify;
+  width: 85%;
+}
+
+@media (min-width: 1200px) {
+  .blog-wrapper {
+    padding-top: 6% !important;
+    padding-left: 6% !important;
+    padding-right: 6% !important;
+  }
+}
+
+.blog-wrapper {
+  padding: 30px 20px 10px 20px;
+  display: flex;
+  padding: 5% 20% 0 20%;
+  flex-direction: column;
+  background-color: white;
 }

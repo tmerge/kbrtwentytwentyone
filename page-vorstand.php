@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <title>KBR | ...weil es um Recke geht!</title>
+    <title>KBR | Vorstand</title>
     <?php get_header(); ?>
 </head>
 <body id="body" class="desktop menu-mobile">
@@ -29,12 +29,7 @@
             <?php get_template_part( 'template-parts/nav'); ?>
         </div>
         <main>
-            <div class="hero">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/s.svg">
-            </div>
-            <section>
-                section1
-            </section>
+            <h1>Vorstand</h1>
         </main>
     </div>
     <div class="social-bar" id="social">
