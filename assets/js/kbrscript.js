@@ -21,16 +21,17 @@ window.onload = () => {
   let subitems = document.getElementsByClassName('item sub-item');
   let overlay = document.getElementById('overlay');
 
-  if (body.classList.contains('menu-desktop')) {
-    console.log("not contains mobile");
-    for (let i = 0; i < subitems.length; i++) {
-      subitems[i].addEventListener('mouseover', (e) => {
+  for (let i = 0; i < subitems.length; i++) {
+    subitems[i].addEventListener('mouseover', (e) => {
+      if (body.classList.contains('menu-desktop')) {
         overlay.classList.add('is-visible');
-      });
-      subitems[i].addEventListener('mouseout', (e) => {
+      }
+    });
+    subitems[i].addEventListener('mouseout', (e) => {
+      if (body.classList.contains('menu-desktop')) {
         overlay.classList.remove('is-visible');
-      });
-    }
+      }
+    });
   }
 
   // get menu toggle

@@ -1,5 +1,14 @@
+<?php
+/**
+ * The impressum template file.
+ *
+ * This is the most generic template file in a WordPress theme
+ * @link    https://tilmerge.xyz/
+ */
+?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,154 +17,270 @@
     <?php get_header(); ?>
 </head>
 
-<body>
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/s.svg" class="bg img-responsive container-sm-auto">
-    <main class="container d-flex flex-column min-vh-100 justify-content-center p-6 rounded">
-        <h1 class="site-heading">datenschutz</h1>
-        <p class="text-justify">Musterdatenschutzerklärung für Websitebetreiber nach den Vorgaben der DSGVO <br>
-<main class="text-warp">
-<!-- wp:paragraph -->
-<p>Wir freuen uns über Ihren Besuch auf unserer Internetseite <a href="http://www.kommunalbuendnis-recke.de/" target="_blank" rel="noreferrer noopener">www.kommunalbuendnis-recke.de</a>&nbsp;und Ihr Interesse an unserem Verein. Der Schutz Ihrer personenbezogenen Daten ist uns ein wichtiges Anliegen. Personenbezogene Daten sind Informationen über persönliche oder sachliche Verhältnisse einer bestimmten oder bestimmbaren natürlichen Person. Darunter fallen z.B. der bürgerliche Name, die Anschrift, die Telefonnummer und das Geburtsdatum, aber auch alle anderen Daten, die auf eine bestimmbare Person bezogen werden können.<br>Da personenbezogene Daten besonderen gesetzlichen Schutz genießen, werden sie bei uns nur im soweit dies für die Bereitstellung unserer Internetseite und die Erbringung unserer Leistung erforderlich ist erhoben. Nachfolgend stellen wir dar, welche personenbezogenen Informationen wir während Ihres Besuches auf unserer Internetseite erfassen und wie wir diese nutzen.<br>Unsere Datenschutzpraxis steht im Einklang mit den gesetzlichen Regelungen, insbesondere denen des Bundesdatenschutzgesetzes (BDSG), des Telemediengesetzes (TMG) und der Datenschutzgrundverordnung der EU (DSGVO). Wir werden Ihre personenbezogenen Daten ausschließlich erheben, verarbeiten und speichern, soweit dies zur funktionsfähigen Bereitstellung dieser Internetseite und unserer Inhalte und Leistungen erforderlich ist, sowie zur Bearbeitung von Anfragen und ggf. zur Abwicklung von Bestellungen / Verträgen, dies jeweils aber nur, soweit hierfür ein berechtigtes Interesse i.S.d. Art. 6 Abs. 1 S.1 lit. f DSGVO oder ein sonstiger Erlaubnistatbestand besteht. Nur wenn Sie zuvor Ihre Einwilligung gesondert erteilt haben, erfolgt eine Nutzung Ihrer Daten auch für weitergehende, in der Einwilligung genau bestimmte Zwecke, z.B. für die Übersendung von werblichen Informationen per Newsletter.</p>
-<!-- /wp:paragraph -->
+<body id="body" class="desktop menu-mobile">
+    <div class="mobile-menu-header">
+        <div class="logo">
+            <a href="https://wordpress.kbr.social"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/KBR_Logo.png" alt="Kommunalbündnis Recke Logo"></a>
+        </div>
+        <div class="menu-toggle">
+            <div></div>
+        </div>
+    </div>
+    <div class="logo">
+        <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/KBR_Logo_rotate.png" alt="KBR Logo" class="img-fluid"></a>
+    </div>
+    <div class="container-fluid">
+        <div class="menu-header">
+            <?php get_template_part( 'template-parts/nav'); ?>
+        </div>
+        <main>
+            <div class="datenschutz container-fluid">
+                <h1 class="site-heading">Datenschutz</h1>
+                <p class="text-justify">
+                <h4>Datenschutzerklärung</h4>
 
-<!-- wp:heading {"level":3} -->
-<h6 id="1verantwortlicherisdart4nr7dsgvo">1. Verantwortlicher i.S.d. Art. 4 Nr. 7 DSGVO</h6>
-<!-- /wp:heading -->
+<p>Wir freuen uns sehr über Ihr Interesse an unserem Unternehmen. Datenschutz hat einen besonders hohen Stellenwert für die Geschäftsleitung der Kommunalbündnis Recke. Eine Nutzung der Internetseiten der Kommunalbündnis Recke ist grundsätzlich ohne jede Angabe personenbezogener Daten möglich. Sofern eine betroffene Person besondere Services unseres Unternehmens über unsere Internetseite in Anspruch nehmen möchte, könnte jedoch eine Verarbeitung personenbezogener Daten erforderlich werden. Ist die Verarbeitung personenbezogener Daten erforderlich und besteht für eine solche Verarbeitung keine gesetzliche Grundlage, holen wir generell eine Einwilligung der betroffenen Person ein.</p>
 
-<!-- wp:paragraph -->
-<p>Verantwortlicher im Sinne der DSGVO und anderer nationaler Datenschutzgesetze der Mitgliedsstaaten sowie sonstiger datenschutzrechtlicher Bestimmungen ist:</p>
-<!-- /wp:paragraph -->
+<p>Die Verarbeitung personenbezogener Daten, beispielsweise des Namens, der Anschrift, E-Mail-Adresse oder Telefonnummer einer betroffenen Person, erfolgt stets im Einklang mit der Datenschutz-Grundverordnung und in Übereinstimmung mit den für die Kommunalbündnis Recke geltenden landesspezifischen Datenschutzbestimmungen. Mittels dieser Datenschutzerklärung möchte unser Unternehmen die Öffentlichkeit über Art, Umfang und Zweck der von uns erhobenen, genutzten und verarbeiteten personenbezogenen Daten informieren. Ferner werden betroffene Personen mittels dieser Datenschutzerklärung über die ihnen zustehenden Rechte aufgeklärt.</p>
 
-<!-- wp:paragraph -->
-<p>Kommunalbündnis Recke<br>Buchholzstraße 18B<br>49509 Recke</p>
-<!-- /wp:paragraph -->
+<p>Die Kommunalbündnis Recke hat als für die Verarbeitung Verantwortlicher zahlreiche technische und organisatorische Maßnahmen umgesetzt, um einen möglichst lückenlosen Schutz der über diese Internetseite verarbeiteten personenbezogenen Daten sicherzustellen. Dennoch können Internetbasierte Datenübertragungen grundsätzlich Sicherheitslücken aufweisen, sodass ein absoluter Schutz nicht gewährleistet werden kann. Aus diesem Grund steht es jeder betroffenen Person frei, personenbezogene Daten auch auf alternativen Wegen, beispielsweise telefonisch, an uns zu übermitteln.</p>
 
-<!-- wp:paragraph -->
-<p>Email: j.visse68@gmail.com<br>Tel.: +49 (0) 5453 / 93 24 70</p>
-<!-- /wp:paragraph -->
+<h4>1. Begriffsbestimmungen</h4>
+<p>Die Datenschutzerklärung der Kommunalbündnis Recke beruht auf den Begrifflichkeiten, die durch den Europäischen Richtlinien- und Verordnungsgeber beim Erlass der Datenschutz-Grundverordnung (DS-GVO) verwendet wurden. Unsere Datenschutzerklärung soll sowohl für die Öffentlichkeit als auch für unsere Kunden und Geschäftspartner einfach lesbar und verständlich sein. Um dies zu gewährleisten, möchten wir vorab die verwendeten Begrifflichkeiten erläutern.</p>
 
-<!-- wp:heading {"level":3} -->
-<h6 id="2bereitstellungderwebsiteunderstellungvonlogfiles">2. Bereitstellung der Website und Erstellung von Logfiles</h6>
-<!-- /wp:heading -->
+<p>Wir verwenden in dieser Datenschutzerklärung unter anderem die folgenden Begriffe:</p>
 
-<!-- wp:paragraph -->
-<p>Bei jedem Aufruf unserer Internetseite erfasst unser System automatisiert Daten und Informationen des Computersystems des aufrufenden Rechners. Folgende Daten werden hierbei erhoben:</p>
-<!-- /wp:paragraph -->
+<ul style="list-style: none">
+<li><h4>a)    personenbezogene Daten</h4>
+<p>Personenbezogene Daten sind alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person (im Folgenden „betroffene Person“) beziehen. Als identifizierbar wird eine natürliche Person angesehen, die direkt oder indirekt, insbesondere mittels Zuordnung zu einer Kennung wie einem Namen, zu einer Kennnummer, zu Standortdaten, zu einer Online-Kennung oder zu einem oder mehreren besonderen Merkmalen, die Ausdruck der physischen, physiologischen, genetischen, psychischen, wirtschaftlichen, kulturellen oder sozialen Identität dieser natürlichen Person sind, identifiziert werden kann.</p>
+</li>
+<li><h4>b)    betroffene Person</h4>
+<p>Betroffene Person ist jede identifizierte oder identifizierbare natürliche Person, deren personenbezogene Daten von dem für die Verarbeitung Verantwortlichen verarbeitet werden.</p>
+</li>
+<li><h4>c)    Verarbeitung</h4>
+<p>Verarbeitung ist jeder mit oder ohne Hilfe automatisierter Verfahren ausgeführte Vorgang oder jede solche Vorgangsreihe im Zusammenhang mit personenbezogenen Daten wie das Erheben, das Erfassen, die Organisation, das Ordnen, die Speicherung, die Anpassung oder Veränderung, das Auslesen, das Abfragen, die Verwendung, die Offenlegung durch Übermittlung, Verbreitung oder eine andere Form der Bereitstellung, den Abgleich oder die Verknüpfung, die Einschränkung, das Löschen oder die Vernichtung.</p>
+</li>
+<li><h4>d)    Einschränkung der Verarbeitung</h4>
+<p>Einschränkung der Verarbeitung ist die Markierung gespeicherter personenbezogener Daten mit dem Ziel, ihre künftige Verarbeitung einzuschränken.</p>
+</li>
+<li><h4>e)    Profiling</h4>
+<p>Profiling ist jede Art der automatisierten Verarbeitung personenbezogener Daten, die darin besteht, dass diese personenbezogenen Daten verwendet werden, um bestimmte persönliche Aspekte, die sich auf eine natürliche Person beziehen, zu bewerten, insbesondere, um Aspekte bezüglich Arbeitsleistung, wirtschaftlicher Lage, Gesundheit, persönlicher Vorlieben, Interessen, Zuverlässigkeit, Verhalten, Aufenthaltsort oder Ortswechsel dieser natürlichen Person zu analysieren oder vorherzusagen.</p>
+</li>
+<li><h4>f)     Pseudonymisierung</h4>
+<p>Pseudonymisierung ist die Verarbeitung personenbezogener Daten in einer Weise, auf welche die personenbezogenen Daten ohne Hinzuziehung zusätzlicher Informationen nicht mehr einer spezifischen betroffenen Person zugeordnet werden können, sofern diese zusätzlichen Informationen gesondert aufbewahrt werden und technischen und organisatorischen Maßnahmen unterliegen, die gewährleisten, dass die personenbezogenen Daten nicht einer identifizierten oder identifizierbaren natürlichen Person zugewiesen werden.</p>
+</li>
+<li><h4>g)    Verantwortlicher oder für die Verarbeitung Verantwortlicher</h4>
+<p>Verantwortlicher oder für die Verarbeitung Verantwortlicher ist die natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet. Sind die Zwecke und Mittel dieser Verarbeitung durch das Unionsrecht oder das Recht der Mitgliedstaaten vorgegeben, so kann der Verantwortliche beziehungsweise können die bestimmten Kriterien seiner Benennung nach dem Unionsrecht oder dem Recht der Mitgliedstaaten vorgesehen werden.</p>
+</li>
+<li><h4>h)    Auftragsverarbeiter</h4>
+<p>Auftragsverarbeiter ist eine natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, die personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet.</p>
+</li>
+<li><h4>i)      Empfänger</h4>
+<p>Empfänger ist eine natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, der personenbezogene Daten offengelegt werden, unabhängig davon, ob es sich bei ihr um einen Dritten handelt oder nicht. Behörden, die im Rahmen eines bestimmten Untersuchungsauftrags nach dem Unionsrecht oder dem Recht der Mitgliedstaaten möglicherweise personenbezogene Daten erhalten, gelten jedoch nicht als Empfänger.</p>
+</li>
+<li><h4>j)      Dritter</h4>
+<p>Dritter ist eine natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle außer der betroffenen Person, dem Verantwortlichen, dem Auftragsverarbeiter und den Personen, die unter der unmittelbaren Verantwortung des Verantwortlichen oder des Auftragsverarbeiters befugt sind, die personenbezogenen Daten zu verarbeiten.</p>
+</li>
+<li><h4>k)    Einwilligung</h4>
+<p>Einwilligung ist jede von der betroffenen Person freiwillig für den bestimmten Fall in informierter Weise und unmissverständlich abgegebene Willensbekundung in Form einer Erklärung oder einer sonstigen eindeutigen bestätigenden Handlung, mit der die betroffene Person zu verstehen gibt, dass sie mit der Verarbeitung der sie betreffenden personenbezogenen Daten einverstanden ist.</p>
+</li>
+</ul>
 
-<!-- wp:heading {"level":4} -->
-<h4 id="umfangderverarbeitungderdaten">Umfang der Verarbeitung der Daten</h4>
-<!-- /wp:heading -->
+<h4>2. Name und Anschrift des für die Verarbeitung Verantwortlichen</h4>
+<p>Verantwortlicher im Sinne der Datenschutz-Grundverordnung, sonstiger in den Mitgliedstaaten der Europäischen Union geltenden Datenschutzgesetze und anderer Bestimmungen mit datenschutzrechtlichem Charakter ist die:</p>
 
-<!-- wp:paragraph -->
-<p>(1) Informationen über den Browsertyp und die verwendete Version<br>(2) Das Betriebssystem des Abrufgerätes<br>(3) Die IP-Adresse des Abrufgerätes<br>(4) Datum und Uhrzeit des Zugriffs<br>(5) Websites und Ressourcen (Bilder, Dateien, weitere Seiteninhalte), die auf unserer Internetseite aufgerufen wurden.<br>(6) Websites, von denen das System des Nutzers auf unsere Internetseite gelangte (Referrer-Tracking)</p>
-<!-- /wp:paragraph -->
+<p>Kommunalbündnis Recke n.e.V.</p>
+<p>Buchholzstraße 18b</p>
+<p>49509 Recke</p>
+<p>Deutschland</p>
+<p>Tel.: +49 (0) 5453 / 932470</p>
+<p>E-Mail: info@kommunalbündnis-recke.de</p>
+<p>Website: https://kommunalbündnis-recke.de</p>
 
-<!-- wp:paragraph -->
-<p>Diese Daten werden in den Logfiles unseres Systems gespeichert. Eine Speicherung dieser Daten zusammen mit personenbezogenen Daten eines konkreten Nutzers findet nicht statt, so dass eine Identifizierung einzelner Seitenbesucher nicht erfolgt.</p>
-<!-- /wp:paragraph -->
+<h4>3. Cookies</h4>
+<p>Die Internetseiten der Kommunalbündnis Recke verwenden Cookies. Cookies sind Textdateien, welche über einen Internetbrowser auf einem Computersystem abgelegt und gespeichert werden.</p>
 
-<!-- wp:list -->
-<ul><li><strong>Rechtsgrundlage für die Verarbeitung personenbezogener Daten:</strong><br> Art. 6 Abs.1 lit.f DSGVO (berechtigtes Interesse). Unser berechtigtes Interesse besteht darin, die Erreichung des nachfolgend geschilderten Zwecks zu gewährleisten.</li><li><strong>Zweck der Datenverarbeitung: </strong><br>Das Logging erfolgt zur Erhaltung der Kompatibilität unsere Internetseite für möglichst alle Besucher und zur Missbrauchsbekämpfung und Störungsbeseitigung. Hierfür ist es notwendig, die technischen Daten des abrufenden Rechners zu loggen, um so frühestmöglich auf Darstellungsfehler, Angriffe auf unsere IT-Systeme und/oder Fehler der Funktionalität unserer Internetseite reagieren zu können. Zudem dienen uns die Daten zur Optimierung der Website und zur generellen Sicherstellung der Sicherheit unserer informationstechnischen Systeme.</li><li><strong>Dauer der Speicherung:</strong><br> Die Löschung der vorgenannten technischen Daten erfolgt, sobald sie nicht mehr benötigt werden, um die Kompatibilität der Internetseite für alle Besucher zu gewährleisten, spätestens aber 3 Monate nach Abruf unserer Internetseite.</li><li><strong>Widerspruchs- und Beseitigungsmöglichkeit:</strong><br> Die Widerspruchs- und Beseitigungsmöglichkeiten richten sich nach den nachfolgend in dieser Datenschutzerklärung geschilderten generellen Regelungen zum datenschutzrechtlichen Widerspruchsrecht und Löschungsanspruch.</li></ul>
-<!-- /wp:list -->
+<p>Zahlreiche Internetseiten und Server verwenden Cookies. Viele Cookies enthalten eine sogenannte Cookie-ID. Eine Cookie-ID ist eine eindeutige Kennung des Cookies. Sie besteht aus einer Zeichenfolge, durch welche Internetseiten und Server dem konkreten Internetbrowser zugeordnet werden können, in dem das Cookie gespeichert wurde. Dies ermöglicht es den besuchten Internetseiten und Servern, den individuellen Browser der betroffenen Person von anderen Internetbrowsern, die andere Cookies enthalten, zu unterscheiden. Ein bestimmter Internetbrowser kann über die eindeutige Cookie-ID wiedererkannt und identifiziert werden.</p>
 
-<!-- wp:heading {"level":3} -->
-<h6><strong>3. Statistische Auswertung der Besuche dieser Internetseite - Webtracker</strong></h6>
-<!-- /wp:heading -->
+<p>Durch den Einsatz von Cookies kann die Kommunalbündnis Recke den Nutzern dieser Internetseite nutzerfreundlichere Services bereitstellen, die ohne die Cookie-Setzung nicht möglich wären.</p>
 
-<!-- wp:paragraph -->
-<p>Wir erheben, verarbeiten und speichern bei dem Aufruf dieser Internetseite oder einzelner Dateien der Internetseite folgende Daten: IP-Adresse, Webseite, von der aus die Datei abgerufen wurde, Name der Datei, Datum und Uhrzeit des Abrufs, übertragene Datenmenge und Meldung über den Erfolg des Abrufs (sog. Web-Log). Diese Zugriffsdaten verwenden wir ausschließlich in nicht personalisierter Form für die stetige Verbesserung unseres Internetangebots und zu statistischen Zwecken.<br> Wir setzen zur Auswertung der Besuche dieser Internetseite zudem noch folgende Webtracker ein: </p>
-<!-- /wp:paragraph -->
+<p>Mittels eines Cookies können die Informationen und Angebote auf unserer Internetseite im Sinne des Benutzers optimiert werden. Cookies ermöglichen uns, wie bereits erwähnt, die Benutzer unserer Internetseite wiederzuerkennen. Zweck dieser Wiedererkennung ist es, den Nutzern die Verwendung unserer Internetseite zu erleichtern. Der Benutzer einer Internetseite, die Cookies verwendet, muss beispielsweise nicht bei jedem Besuch der Internetseite erneut seine Zugangsdaten eingeben, weil dies von der Internetseite und dem auf dem Computersystem des Benutzers abgelegten Cookie übernommen wird. Ein weiteres Beispiel ist das Cookie eines Warenkorbes im Online-Shop. Der Online-Shop merkt sich die Artikel, die ein Kunde in den virtuellen Warenkorb gelegt hat, über ein Cookie.</p>
 
-<!-- wp:heading {"level":4} -->
-<h5><strong>Google-Analytics</strong></h5>
-<!-- /wp:heading -->
+<p>Die betroffene Person kann die Setzung von Cookies durch unsere Internetseite jederzeit mittels einer entsprechenden Einstellung des genutzten Internetbrowsers verhindern und damit der Setzung von Cookies dauerhaft widersprechen. Ferner können bereits gesetzte Cookies jederzeit über einen Internetbrowser oder andere Softwareprogramme gelöscht werden. Dies ist in allen gängigen Internetbrowsern möglich. Deaktiviert die betroffene Person die Setzung von Cookies in dem genutzten Internetbrowser, sind unter Umständen nicht alle Funktionen unserer Internetseite vollumfänglich nutzbar.</p>
 
-<!-- wp:list -->
-<ul><li><strong>Umfang der Verarbeitung personenbezogener Daten:</strong> <br>Auf unserer Seite verwenden wir den Webtracking-Service des Unternehmens Google LLC, 1600 Amphitheatre Park in 94043 Mountain View, USA (nachfolgend: Google-Analytics). Google-Analytics nutzt im Rahmen des Webtrackings Cookies, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung unserer Website und Ihres Surfverhaltens ermöglichen (sogenanntes Tracken). Wir führen diese Analyse auf Basis des Tracking-Services von Google-Analytics durch, um unser Internetangebot ständig zu optimieren und besser verfügbar zu machen. Im Rahmen der Benutzung unserer Webseite werden dabei Daten, wie insbesondere Ihre IP-Adresse und Ihre Nutzeraktivitäten an Server des Unternehmens Google LLC übertragen und außerhalb der Europäischen Union, z.B. in den USA verarbeitet und gespeichert.<br>Die EU-Kommission hat festgestellt, dass in den USA ein angemessenes Datenschutzniveau bestehen kann, wenn sich das datenverarbeitende Unternehmen dem US-EU-Privacy-Shield Abkommen unterworfen hat und der Datenexport in die USA auf diesem Weg zulässig ausgestaltet wurde. Durch die Aktivierung der IP-Anonymisierung innerhalb des Google-Analytics Tracking-Codes dieser Internetseite, wird Ihre IP-Adresse von Google-Analytics vor der Übertragung anonymisiert. Diese Website nutzt einen Google-Analytics-Tracking-Code, der um den Operator gat._anonymizeIp(); erweitert wurde, um nur eine anonymisierte Erfassung von IP-Adressen (sog. IP-Masking) zu ermöglichen. </li></ul>
-<!-- /wp:list -->
+<h4>4. Erfassung von allgemeinen Daten und Informationen</h4>
+<p>Die Internetseite der Kommunalbündnis Recke erfasst mit jedem Aufruf der Internetseite durch eine betroffene Person oder ein automatisiertes System eine Reihe von allgemeinen Daten und Informationen. Diese allgemeinen Daten und Informationen werden in den Logfiles des Servers gespeichert. Erfasst werden können die (1) verwendeten Browsertypen und Versionen, (2) das vom zugreifenden System verwendete Betriebssystem, (3) die Internetseite, von welcher ein zugreifendes System auf unsere Internetseite gelangt (sogenannte Referrer), (4) die Unterwebseiten, welche über ein zugreifendes System auf unserer Internetseite angesteuert werden, (5) das Datum und die Uhrzeit eines Zugriffs auf die Internetseite, (6) eine Internet-Protokoll-Adresse (IP-Adresse), (7) der Internet-Service-Provider des zugreifenden Systems und (8) sonstige ähnliche Daten und Informationen, die der Gefahrenabwehr im Falle von Angriffen auf unsere informationstechnologischen Systeme dienen.</p>
 
-<!-- wp:list -->
-<ul><li><strong>Rechtsgrundlage für die Verarbeitung personenbezogener Daten:</strong> <br>Art. 6 Abs.1 lit.a DSGVO (Einwilligung), entweder im Rahmen der Registrierung bei Google (Eröffnung eines Google-Accounts und Akzeptanz der dort implementierten Datenschutzhinweise) oder, falls Sie sich nicht bei Google registriert haben, durch explizite Einwilligung beim Öffnen unserer Seite.  </li></ul>
-<!-- /wp:list -->
+<p>Bei der Nutzung dieser allgemeinen Daten und Informationen zieht die Kommunalbündnis Recke keine Rückschlüsse auf die betroffene Person. Diese Informationen werden vielmehr benötigt, um (1) die Inhalte unserer Internetseite korrekt auszuliefern, (2) die Inhalte unserer Internetseite sowie die Werbung für diese zu optimieren, (3) die dauerhafte Funktionsfähigkeit unserer informationstechnologischen Systeme und der Technik unserer Internetseite zu gewährleisten sowie (4) um Strafverfolgungsbehörden im Falle eines Cyberangriffes die zur Strafverfolgung notwendigen Informationen bereitzustellen. Diese anonym erhobenen Daten und Informationen werden durch die Kommunalbündnis Recke daher einerseits statistisch und ferner mit dem Ziel ausgewertet, den Datenschutz und die Datensicherheit in unserem Unternehmen zu erhöhen, um letztlich ein optimales Schutzniveau für die von uns verarbeiteten personenbezogenen Daten sicherzustellen. Die anonymen Daten der Server-Logfiles werden getrennt von allen durch eine betroffene Person angegebenen personenbezogenen Daten gespeichert.</p>
 
-<!-- wp:list -->
-<ul><li><strong>Zweck der Datenverarbeitung:</strong> <br>Im unserem Auftrag wird Google diese Informationen nutzen, um Ihren Besuch auf dieser Internetseite auszuwerten, Reports über die Websiteaktivitäten zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen gegenüber uns zu erbringen. Die im Rahmen von Google-Analytics von Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen Daten der Google LLC zusammengeführt.  </li></ul>
-<!-- /wp:list -->
+<h4>5. Registrierung auf unserer Internetseite</h4>
+<p>Die betroffene Person hat die Möglichkeit, sich auf der Internetseite des für die Verarbeitung Verantwortlichen unter Angabe von personenbezogenen Daten zu registrieren. Welche personenbezogenen Daten dabei an den für die Verarbeitung Verantwortlichen übermittelt werden, ergibt sich aus der jeweiligen Eingabemaske, die für die Registrierung verwendet wird. Die von der betroffenen Person eingegebenen personenbezogenen Daten werden ausschließlich für die interne Verwendung bei dem für die Verarbeitung Verantwortlichen und für eigene Zwecke erhoben und gespeichert. Der für die Verarbeitung Verantwortliche kann die Weitergabe an einen oder mehrere Auftragsverarbeiter, beispielsweise einen Paketdienstleister, veranlassen, der die personenbezogenen Daten ebenfalls ausschließlich für eine interne Verwendung, die dem für die Verarbeitung Verantwortlichen zuzurechnen ist, nutzt.</p>
 
-<!-- wp:list -->
-<ul><li><strong>Dauer der Speicherung:</strong> <br>Google wird die für die Bereitstellung des Webtracking relevanten Daten solange speichern, wie es notwendig ist, um den gebuchten Webservice zu erfüllen. Die Datenerhebung und Speicherung erfolgt anonymisiert. Soweit doch Personenbezug bestehen sollte, werden die Daten unverzüglich gelöscht, soweit diese keinen gesetzlichen Aufbewahrungspflichten unterfallen. In jedem Fall erfolgt die Löschung nach Ablauf der Aufbewahrungspflicht.  </li></ul>
-<!-- /wp:list -->
+<p>Durch eine Registrierung auf der Internetseite des für die Verarbeitung Verantwortlichen wird ferner die vom Internet-Service-Provider (ISP) der betroffenen Person vergebene IP-Adresse, das Datum sowie die Uhrzeit der Registrierung gespeichert. Die Speicherung dieser Daten erfolgt vor dem Hintergrund, dass nur so der Missbrauch unserer Dienste verhindert werden kann, und diese Daten im Bedarfsfall ermöglichen, begangene Straftaten aufzuklären. Insofern ist die Speicherung dieser Daten zur Absicherung des für die Verarbeitung Verantwortlichen erforderlich. Eine Weitergabe dieser Daten an Dritte erfolgt grundsätzlich nicht, sofern keine gesetzliche Pflicht zur Weitergabe besteht oder die Weitergabe der Strafverfolgung dient.</p>
 
-<!-- wp:list -->
-<ul><li><strong>Widerspruchs- und Beseitigungsmöglichkeit:</strong> <br>Sie können die Erfassung und Weiterleitung der personenbezogenen Daten an Google (insb. Ihrer IP-Adresse) sowie die Verarbeitung dieser Daten durch Google verhindern, indem Sie die Ausführung von Script-Code in Ihrem Browser deaktivieren, einen Script-Blocker in Ihrem Browser installieren (diesen finden Sie z.B. unter <a rel="noreferrer noopener" href="http://www.noscript.net/" target="_blank">www.noscript.net</a> oder <a rel="noreferrer noopener" href="http://www.ghostery.com/" target="_blank">www.ghostery.com</a> ) oder die „Do Not Track“ Einstellung Ihres Browsers aktivieren. Sie können darüber hinaus die Erfassung der durch den Google-Cookie erzeugten und auf Ihre Nutzung der Website bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google verhindern, indem Sie das unter dem folgenden Link (<a rel="noreferrer noopener" href="http://tools.google.com/dlpage/gaoptout?hl=de" target="_blank">http://tools.google.com/dlpage/gaoptout?hl=de</a> ) verfügbare Browser-Plug-In herunterladen und installieren. Die Sicherheits- und Datenschutzgrundsätze von Google finden Sie unter <a rel="noreferrer noopener" href="https://policies.google.com/privacy?hl=de" target="_blank">https://policies.google.com/privacy?hl=de</a>  </li></ul>
-<!-- /wp:list -->
+<p>Die Registrierung der betroffenen Person unter freiwilliger Angabe personenbezogener Daten dient dem für die Verarbeitung Verantwortlichen dazu, der betroffenen Person Inhalte oder Leistungen anzubieten, die aufgrund der Natur der Sache nur registrierten Benutzern angeboten werden können. Registrierten Personen steht die Möglichkeit frei, die bei der Registrierung angegebenen personenbezogenen Daten jederzeit abzuändern oder vollständig aus dem Datenbestand des für die Verarbeitung Verantwortlichen löschen zu lassen.</p>
 
-<!-- wp:heading {"level":3} -->
-<h6 id="3einbindungexternerwebservicesundverarbeitungvondatenauerhalbdereu">4. Einbindung externer Webservices und Verarbeitung von Daten außerhalb der EU</h6>
-<!-- /wp:heading -->
+<p>Der für die Verarbeitung Verantwortliche erteilt jeder betroffenen Person jederzeit auf Anfrage Auskunft darüber, welche personenbezogenen Daten über die betroffene Person gespeichert sind. Ferner berichtigt oder löscht der für die Verarbeitung Verantwortliche personenbezogene Daten auf Wunsch oder Hinweis der betroffenen Person, soweit dem keine gesetzlichen Aufbewahrungspflichten entgegenstehen. Die Gesamtheit der Mitarbeiter des für die Verarbeitung Verantwortlichen stehen der betroffenen Person in diesem Zusammenhang als Ansprechpartner zur Verfügung.</p>
 
-<!-- wp:paragraph -->
-<p>Auf unserer Internetseite verwenden wir aktive Java-Script-Inhalte von externen Anbietern, sog. Webservices. Durch Aufruf unserer Internetseite erhalten diese externen Anbieter ggf. personenbezogene Informationen über Ihren Besuch auf unserer Internetseite. Hierbei ist ggf. eine Verarbeitung von Daten außerhalb der EU möglich. Sie können dies verhindern, indem Sie einen Java-Script-Blocker wie z.B. das Browser-Plug-In 'NoScript' installieren (<a rel="noreferrer noopener" href="http://www.noscript.net/" target="_blank">www.noscript.net</a>&nbsp;) oder Java-Script in Ihrem Browser deaktivieren. Hierdurch kann es zu Funktionseinschränkungen auf Internetseiten kommen, die Sie besuchen.<br>Wir verwenden folgende externe Webservices:</p>
-<!-- /wp:paragraph -->
+<h4>6. Abonnement unseres Newsletters</h4>
+<p>Auf der Internetseite der Kommunalbündnis Recke wird den Benutzern die Möglichkeit eingeräumt, den Newsletter unseres Unternehmens zu abonnieren. Welche personenbezogenen Daten bei der Bestellung des Newsletters an den für die Verarbeitung Verantwortlichen übermittelt werden, ergibt sich aus der hierzu verwendeten Eingabemaske.</p>
 
-<!-- wp:list -->
-<ul><li><strong>Doubleclick:&nbsp;</strong><br>Auf unserer Webseite wird ein Webservice des Unternehmens Google LLC, 1600 Amphitheatre Parkway, 94043 Mountain View (nachfolgend: Doubleclick) nachgeladen. Wir nutzen diese Daten, um die volle Funktionalität unserer Webseite zu gewährleisten. In diesem Zusammenhang wird Ihr Browser ggf. personenbezogene Daten an Doubleclick übermitteln. Rechtsgrundlage für die Datenverarbeitung ist Art. 6 Abs.1 lit. f DSGVO. Das berechtigte Interesse besteht in einer fehlerfreien Funktion der Internetseite. Doubleclick hat sich im Rahmen des EU-US-Privacy-Shield-Abkommens selbst zertifiziert (vgl. <a rel="noreferrer noopener" href="https://www.privacyshield.gov/list" target="_blank">https://www.privacyshield.gov/list</a> ). Die Löschung der Daten erfolgt, sobald der Zweck ihrer Erhebung erfüllt wurde. Weitere Informationen zum Handling der übertragenen Daten finden Sie in der Datenschutzerklärung von Doubleclick: <a rel="noreferrer noopener" href="https://www.google.com/intl/de/policies/privacy/" target="_blank">https://www.google.com/intl/de/policies/privacy/</a> . Sie können die Erfassung sowie die Verarbeitung Ihrer Daten durch Doubleclick verhindern, indem Sie die Ausführung von Script-Code in Ihrem Browser deaktivieren oder einen Script-Blocker in Ihrem Browser installieren (diesen finden Sie z.B. unter <a rel="noreferrer noopener" href="http://www.noscript.net" target="_blank">www.noscript.net</a> oder <a rel="noreferrer noopener" href="http://www.ghostery.com" target="_blank">www.ghostery.com</a> ).</li><li><strong>Google: </strong><br>Auf unserer Webseite wird ein Webservice des Unternehmens Google LLC, 1600 Amphitheatre Parkway, 94043 Mountain View (nachfolgend: Google) nachgeladen. Wir nutzen diese Daten, um die volle Funktionalität unserer Webseite zu gewährleisten. In diesem Zusammenhang wird Ihr Browser ggf. personenbezogene Daten an Google übermitteln. Rechtsgrundlage für die Datenverarbeitung ist Art. 6 Abs.1 lit. f DSGVO. Das berechtigte Interesse besteht in einer fehlerfreien Funktion der Internetseite. Google hat sich im Rahmen des EU-US-Privacy-Shield-Abkommens selbst zertifiziert (vgl. <a rel="noreferrer noopener" href="https://www.privacyshield.gov/list" target="_blank">https://www.privacyshield.gov/list</a> ). Die Löschung der Daten erfolgt, sobald der Zweck ihrer Erhebung erfüllt wurde. Weitere Informationen zum Handling der übertragenen Daten finden Sie in der Datenschutzerklärung von Google: <a rel="noreferrer noopener" href="https://www.google.com/intl/de/policies/privacy/" target="_blank">https://www.google.com/intl/de/policies/privacy/</a> . Sie können die Erfassung sowie die Verarbeitung Ihrer Daten durch Google verhindern, indem Sie die Ausführung von Script-Code in Ihrem Browser deaktivieren oder einen Script-Blocker in Ihrem Browser installieren (diesen finden Sie z.B. unter <a rel="noreferrer noopener" href="http://www.noscript.net" target="_blank">www.noscript.net</a> oder <a rel="noreferrer noopener" href="http://www.ghostery.com" target="_blank">www.ghostery.com</a> ).</li><li><strong>Google-Apis:</strong>&nbsp;<br>Auf unserer Webseite wird ein Webservice des Unternehmens Google LLC, 1600 Amphitheatre Parkway, 94043 Mountain View (nachfolgend: Google-Apis) nachgeladen. Wir nutzen diese Daten, um die volle Funktionalität unserer Webseite zu gewährleisten. In diesem Zusammenhang wird Ihr Browser ggf. personenbezogene Daten an Google-Apis übermitteln. Rechtsgrundlage für die Datenverarbeitung ist Art. 6 Abs.1 lit. f DSGVO. Das berechtigte Interesse besteht in einer fehlerfreien Funktion der Internetseite. Google-Apis hat sich im Rahmen des EU-US-Privacy-Shield-Abkommens selbst zertifiziert (vgl.&nbsp;<a rel="noreferrer noopener" href="https://www.privacyshield.gov/list" target="_blank">https://www.privacyshield.gov/list</a>&nbsp;). Die Löschung der Daten erfolgt, sobald der Zweck ihrer Erhebung erfüllt wurde. Weitere Informationen zum Handling der übertragenen Daten finden Sie in der Datenschutzerklärung von Google-Apis:&nbsp;<a rel="noreferrer noopener" href="https://www.google.com/intl/de/policies/privacy/" target="_blank">https://www.google.com/intl/de/policies/privacy/</a>&nbsp;. Sie können die Erfassung sowie die Verarbeitung Ihrer Daten durch Google-Apis verhindern, indem Sie die Ausführung von Script-Code in Ihrem Browser deaktivieren oder einen Script-Blocker in Ihrem Browser installieren (diesen finden Sie z.B. unter&nbsp;<a rel="noreferrer noopener" href="http://www.noscript.net/" target="_blank">www.noscript.net</a>&nbsp;oder&nbsp;<a rel="noreferrer noopener" href="http://www.ghostery.com/" target="_blank">www.ghostery.com</a>&nbsp;).</li><li><strong>gravatar.com:&nbsp;</strong><br>Auf unserer Webseite wird ein Webservice des Unternehmens Auttomattic, Inc., 60 29th Street # 343, 94110 San Francisco (nachfolgend: gravatar.com) nachgeladen. Wir nutzen diese Daten, um die volle Funktionalität unserer Webseite zu gewährleisten. In diesem Zusammenhang wird Ihr Browser ggf. personenbezogene Daten an gravatar.com übermitteln. Rechtsgrundlage für die Datenverarbeitung ist Art. 6 Abs.1 lit. f DSGVO. Das berechtigte Interesse besteht in einer fehlerfreien Funktion der Internetseite. gravatar.com hat sich im Rahmen des EU-US-Privacy-Shield-Abkommens selbst zertifiziert (vgl.&nbsp;<a rel="noreferrer noopener" href="https://www.privacyshield.gov/list" target="_blank">https://www.privacyshield.gov/list</a>&nbsp;). Die Löschung der Daten erfolgt, sobald der Zweck ihrer Erhebung erfüllt wurde. Weitere Informationen zum Handling der übertragenen Daten finden Sie in der Datenschutzerklärung von gravatar.com:&nbsp;<a rel="noreferrer noopener" href="https://automattic.com/privacy/" target="_blank">https://automattic.com/privacy/</a>&nbsp;. Sie können die Erfassung sowie die Verarbeitung Ihrer Daten durch gravatar.com verhindern, indem Sie die Ausführung von Script-Code in Ihrem Browser deaktivieren oder einen Script-Blocker in Ihrem Browser installieren (diesen finden Sie z.B. unter&nbsp;<a rel="noreferrer noopener" href="http://www.noscript.net/" target="_blank">www.noscript.net</a>&nbsp;oder&nbsp;<a rel="noreferrer noopener" href="http://www.ghostery.com/" target="_blank">www.ghostery.com</a>&nbsp;).</li><li><strong>gstatic:</strong><br>Auf unserer Webseite wird ein Webservice des Unternehmens Google LLC, 1600 Amphitheatre Parkway, 94043 Mountain View (nachfolgend: gstatic) nachgeladen. Wir nutzen diese Daten, um die volle Funktionalität unserer Webseite zu gewährleisten. In diesem Zusammenhang wird Ihr Browser ggf. personenbezogene Daten an gstatic übermitteln. Rechtsgrundlage für die Datenverarbeitung ist Art. 6 Abs.1 lit. f DSGVO. Das berechtigte Interesse besteht in einer fehlerfreien Funktion der Internetseite. gstatic hat sich im Rahmen des EU-US-Privacy-Shield-Abkommens selbst zertifiziert (vgl.&nbsp;<a rel="noreferrer noopener" href="https://www.privacyshield.gov/list" target="_blank">https://www.privacyshield.gov/list</a>&nbsp;). Die Löschung der Daten erfolgt, sobald der Zweck ihrer Erhebung erfüllt wurde. Weitere Informationen zum Handling der übertragenen Daten finden Sie in der Datenschutzerklärung von gstatic:&nbsp;<a rel="noreferrer noopener" href="https://www.google.com/intl/de/policies/privacy/" target="_blank">https://www.google.com/intl/de/policies/privacy/</a>&nbsp;. Sie können die Erfassung sowie die Verarbeitung Ihrer Daten durch gstatic verhindern, indem Sie die Ausführung von Script-Code in Ihrem Browser deaktivieren oder einen Script-Blocker in Ihrem Browser installieren (diesen finden Sie z.B. unter&nbsp;<a rel="noreferrer noopener" href="http://www.noscript.net/" target="_blank">www.noscript.net</a>&nbsp;oder&nbsp;<a rel="noreferrer noopener" href="http://www.ghostery.com/" target="_blank">www.ghostery.com</a>&nbsp;).</li><li><strong>website-check.de: </strong><br>Auf unserer Seite wird ein Prüfsiegel des Unternehmens Website-Check GmbH, Beethovenstraße 24 in 66111 Saarbrücken, DE (nachfolgend: website-check.de) nachgeladen. Wir binden dieses Prüfsiegel, um auf unserer Seite ein, um zu zeigen, dass wir das Thema „Datenschutz“ ernst nehmen. Aufgrund der Einbindung des Website-Check Prüfsiegels erfolgt eine Übertragung nicht personenbezogener Daten zur Website-Check GmbH als Herausgeber des Prüfsiegels. Diese erhält in diesem Zusammenhang nur Ihre IP-Adresse, um die Bilddatei des Prüfsiegels ausliefern zu können. Ihre IP-Adresse hat für die Website-Check GmbH keinen Personenbezug. werden an Rechtsgrundlage für die Datenverarbeitung ist Art. 6 Abs.1 lit. f DSGVO (berechtigtes Interesse). Das berechtigte Interesse besteht darin, die fehlerfreie Anzeige des Website-Check Prüfsiegels auf der Internetseite zu ermöglichen. Weitere Informationen zum Handling der übertragenen Daten finden Sie in der Datenschutzerklärung von website-check.de:&nbsp;<a rel="noreferrer noopener" href="https://www.website-check.de/datenschutzerklaerung/" target="_blank">https://www.website-check.de/datenschutzerklaerung/.</a>&nbsp;Sie können das Nachladen des Website-Check-Prüfsiegels und damit die Übertragung Ihrer (für die Website-Check GmbH anonymen IP-Adresse an die Website-Check GmbH verhindern, indem Sie die Ausführung von Script-Code der Website-Check GmbH in Ihrem Browser deaktivieren oder einen Script-Blocker in Ihrem Browser installieren (diesen finden Sie z.B. unter&nbsp;<a rel="noreferrer noopener" href="http://www.noscript.net/" target="_blank">www.noscript.net</a>&nbsp;oder&nbsp;<a rel="noreferrer noopener" href="http://www.ghostery.com/" target="_blank">www.ghostery.com</a>&nbsp;).</li></ul>
-<!-- /wp:list -->
+<p>Die Kommunalbündnis Recke informiert ihre Kunden und Geschäftspartner in regelmäßigen Abständen im Wege eines Newsletters über Angebote des Unternehmens. Der Newsletter unseres Unternehmens kann von der betroffenen Person grundsätzlich nur dann empfangen werden, wenn (1) die betroffene Person über eine gültige E-Mail-Adresse verfügt und (2) die betroffene Person sich für den Newsletterversand registriert. An die von einer betroffenen Person erstmalig für den Newsletterversand eingetragene E-Mail-Adresse wird aus rechtlichen Gründen eine Bestätigungsmail im Double-Opt-In-Verfahren versendet. Diese Bestätigungsmail dient der Überprüfung, ob der Inhaber der E-Mail-Adresse als betroffene Person den Empfang des Newsletters autorisiert hat.</p>
 
-<!-- wp:heading {"level":3} -->
-<h6 id="4unterrichtungberdienutzungvoncookies">5. Unterrichtung über die Nutzung von Cookies</h6>
-<!-- /wp:heading -->
+<p>Bei der Anmeldung zum Newsletter speichern wir ferner die vom Internet-Service-Provider (ISP) vergebene IP-Adresse des von der betroffenen Person zum Zeitpunkt der Anmeldung verwendeten Computersystems sowie das Datum und die Uhrzeit der Anmeldung. Die Erhebung dieser Daten ist erforderlich, um den(möglichen) Missbrauch der E-Mail-Adresse einer betroffenen Person zu einem späteren Zeitpunkt nachvollziehen zu können und dient deshalb der rechtlichen Absicherung des für die Verarbeitung Verantwortlichen.</p>
 
-<!-- wp:list -->
-<ul><li><strong>Umfang der Verarbeitung personenbezogener Daten:</strong><br>Auf verschiedenen Seiten verwenden wir Cookies, um die Nutzung bestimmter Funktionen unserer Website zu ermöglichen. Bei den sog. 'Cookies' handelt es sich um kleine Textdateien, die Ihr Browser auf Ihrem Rechner ablegen kann. Diese Textdateien enthalten eine charakteristische Zeichenfolge, die eine eindeutige Identifizierung des Browsers beim erneuten Aufrufen unserer Website ermöglichen Der Vorgang des Ablegens einer Cookie-Datei wird auch 'ein Cookie setzen' genannt.</li><li><strong>Rechtsgrundlage für die Verarbeitung personenbezogener Daten:</strong><br>Art. 6 Abs.1 lit. f DSGVO. (berechtigtes Interesse). Unser berechtigtes Interesse besteht in der Erhaltung der vollen Funktionsfähigkeit unserer Internetseite, die Steigerung der Bedienbarkeit sowie die Ermöglichung einer individuelleren Kundenansprache. Eine Identifizierung einzelner Seitenbesucher ist uns mit Hilfe der Cookie-Technologie nur möglich, wenn der Seitenbesucher uns zuvor auf Basis einer gesonderten Einwilligung entsprechende personenbezogene Daten überlassen hat.</li><li><strong>Zweck der Datenverarbeitung:</strong><br>Die Cookies werden von unserer Website gesetzt, um die volle Funktionsfähigkeit unserer Internetseite zu erhalten und die Bedienbarkeit zu verbessern. Zudem ermöglicht uns die Cookie-Technologie, einzelne Besucher durch Pseudonyme, z.B. eine individuelle, beliebige ID, wiederzuerkennen, so dass es uns möglich ist, individuellere Leistungen anzubieten.</li><li><strong>Dauer der Speicherung: </strong><br>Die Speicherung unserer Cookies erfolgt bis zur Löschung in Ihrem Browser oder, wenn es sich um einen Session-Cookie handelt, bis die Session abgelaufen ist.</li><li><strong>Widerspruchs- und Beseitigungsmöglichkeit:</strong><br>Sie können Ihren Browser selbst nach Ihren Wünschen so einstellen, dass das Setzen von Cookies generell verhindert wird. Sie können dann von Fall zu Fall über die Annahme von Cookies entscheiden oder die Annahme von Cookies grundsätzlich akzeptieren. Cookies können zu unterschiedlichen Zwecken eingesetzt werden, z.B. um zu erkennen, dass Ihr PC schon einmal eine Verbindung zu unserem Webangebot hatte (dauerhafte Cookies) oder um zuletzt angesehene Angebote zu speichern (Sitzungs-Cookies). Wir setzen Cookies ein, um Ihnen einen gesteigerten Benutzerkomfort zu bieten. Um unsere Komfortfunktionen zu nutzen, empfehlen wir Ihnen, die Annahme von Cookies für unser Webangebot zu erlauben. Die Widerspruchs- und Beseitigungsmöglichkeiten richten sich im Übrigen nach den nachfolgend in dieser Datenschutzerklärung geschilderten generellen Regelungen zum datenschutzrechtlichen Widerspruchsrecht und Löschungsanspruch.</li></ul>
-<!-- /wp:list -->
+<p>Die im Rahmen einer Anmeldung zum Newsletter erhobenen personenbezogenen Daten werden ausschließlich zum Versand unseres Newsletters verwendet. Ferner könnten Abonnenten des Newsletters per E-Mail informiert werden, sofern dies für den Betrieb des Newsletter-Dienstes oder eine diesbezügliche Registrierung erforderlich ist, wie dies im Falle von Änderungen am Newsletterangebot oder bei der Veränderung der technischen Gegebenheiten der Fall sein könnte. Es erfolgt keine Weitergabe der im Rahmen des Newsletter-Dienstes erhobenen personenbezogenen Daten an Dritte. Das Abonnement unseres Newsletters kann durch die betroffene Person jederzeit gekündigt werden. Die Einwilligung in die Speicherung personenbezogener Daten, die die betroffene Person uns für den Newsletterversand erteilt hat, kann jederzeit widerrufen werden. Zum Zwecke des Widerrufs der Einwilligung findet sich in jedem Newsletter ein entsprechender Link. Ferner besteht die Möglichkeit, sich jederzeit auch direkt auf der Internetseite des für die Verarbeitung Verantwortlichen vom Newsletterversand abzumelden oder dies dem für die Verarbeitung Verantwortlichen auf andere Weise mitzuteilen.</p>
 
-<!-- wp:heading {"level":3} -->
-<h6 id="5datensicherheitunddatenschutzkommunikationperemail">6. Datensicherheit und Datenschutz, Kommunikation per E-Mail</h6>
-<!-- /wp:heading -->
+<h4>7. Newsletter-Tracking</h4>
+<p>Die Newsletter der Kommunalbündnis Recke enthalten sogenannte Zählpixel. Ein Zählpixel ist eine Miniaturgrafik, die in solche E-Mails eingebettet wird, welche im HTML-Format versendet werden, um eine Logdatei-Aufzeichnung und eine Logdatei-Analyse zu ermöglichen. Dadurch kann eine statistische Auswertung des Erfolges oder Misserfolges von Online-Marketing-Kampagnen durchgeführt werden. Anhand des eingebetteten Zählpixels kann die Kommunalbündnis Recke erkennen, ob und wann eine E-Mail von einer betroffenen Person geöffnet wurde und welche in der E-Mail befindlichen Links von der betroffenen Person aufgerufen wurden.</p>
 
-<!-- wp:paragraph -->
-<p>Ihre personenbezogenen Daten werden durch technische und organisatorische Maßnahmen so bei der Erhebung, Speicherung und Verarbeitung geschützt, dass sie für Dritte nicht zugänglich sind. Bei einer unverschlüsselten Kommunikation per E-Mail kann die vollständige Datensicherheit auf dem Übertragungsweg zu unseren IT-Systemen von uns nicht gewährleistet werden, sodass wir bei Informationen mit hohem Geheimhaltungsbedürfnis eine verschlüsselte Kommunikation oder den Postweg empfehlen.</p>
-<!-- /wp:paragraph -->
+<p>Solche über die in den Newslettern enthaltenen Zählpixel erhobenen personenbezogenen Daten, werden von dem für die Verarbeitung Verantwortlichen gespeichert und ausgewertet, um den Newsletterversand zu optimieren und den Inhalt zukünftiger Newsletter noch besser den Interessen der betroffenen Person anzupassen. Diese personenbezogenen Daten werden nicht an Dritte weitergegeben. Betroffene Personen sind jederzeit berechtigt, die diesbezügliche gesonderte, über das Double-Opt-In-Verfahren abgegebene Einwilligungserklärung zu widerrufen. Nach einem Widerruf werden diese personenbezogenen Daten von dem für die Verarbeitung Verantwortlichen gelöscht. Eine Abmeldung vom Erhalt des Newsletters deutet die Kommunalbündnis Recke automatisch als Widerruf.</p>
 
-<!-- wp:heading {"level":3} -->
-<h6 id="6widerrufvoneinwilligungendatenausknfteundnderungswnschelschungsperrungvondaten">7. Widerruf von Einwilligungen - Datenauskünfte und Änderungswünsche – Löschung &amp; Sperrung von Daten</h6>
-<!-- /wp:heading -->
+<h4>8. Kontaktmöglichkeit über die Internetseite</h4>
+<p>Die Internetseite der Kommunalbündnis Recke enthält aufgrund von gesetzlichen Vorschriften Angaben, die eine schnelle elektronische Kontaktaufnahme zu unserem Unternehmen sowie eine unmittelbare Kommunikation mit uns ermöglichen, was ebenfalls eine allgemeine Adresse der sogenannten elektronischen Post (E-Mail-Adresse) umfasst. Sofern eine betroffene Person per E-Mail oder über ein Kontaktformular den Kontakt mit dem für die Verarbeitung Verantwortlichen aufnimmt, werden die von der betroffenen Person übermittelten personenbezogenen Daten automatisch gespeichert. Solche auf freiwilliger Basis von einer betroffenen Person an den für die Verarbeitung Verantwortlichen übermittelten personenbezogenen Daten werden für Zwecke der Bearbeitung oder der Kontaktaufnahme zur betroffenen Person gespeichert. Es erfolgt keine Weitergabe dieser personenbezogenen Daten an Dritte.</p>
 
-<!-- wp:paragraph -->
-<p>Sie haben in angemessenen Abständen ein Recht auf unentgeltliche Auskunft über Ihre gespeicherten Daten sowie jederzeit ein Recht auf Berichtigung, Sperrung oder Löschung Ihrer Daten. Ihre Daten werden von uns auf erstes Anfordern gelöscht, falls dem nicht gesetzliche Regelungen entgegenstehen. Sie können eine uns erteilte Erlaubnis, Ihre persönlichen Daten zu nutzen, also jederzeit widerrufen. Auskunfts-, Löschungs- und Berichtigungswünsche zu Ihren Daten und gerne auch Anregungen können Sie jederzeit an folgende Adresse senden:</p>
-<!-- /wp:paragraph -->
+<h4>9. Kommentarfunktion im Blog auf der Internetseite</h4>
+<p>Die Kommunalbündnis Recke bietet den Nutzern auf einem Blog, der sich auf der Internetseite des für die Verarbeitung Verantwortlichen befindet, die Möglichkeit, individuelle Kommentare zu einzelnen Blog-Beiträgen zu hinterlassen. Ein Blog ist ein auf einer Internetseite geführtes, in der Regel öffentlich einsehbares Portal, in welchem eine oder mehrere Personen, die Blogger oder Web-Blogger genannt werden, Artikel posten oder Gedanken in sogenannten Blogposts niederschreiben können. Die Blogposts können in der Regel von Dritten kommentiert werden.</p>
 
-<!-- wp:paragraph -->
-<p>Kommunalbündnis Recke<br>Buchholzstraße 18B<br>49509 Recke</p>
-<!-- /wp:paragraph -->
+<p>Hinterlässt eine betroffene Person einen Kommentar in dem auf dieser Internetseite veröffentlichten Blog, werden neben den von der betroffenen Person hinterlassenen Kommentaren auch Angaben zum Zeitpunkt der Kommentareingabe sowie zu dem von der betroffenen Person gewählten Nutzernamen (Pseudonym) gespeichert und veröffentlicht. Ferner wird die vom Internet-Service-Provider (ISP) der betroffenen Person vergebene IP-Adresse mitprotokolliert. Diese Speicherung der IP-Adresse erfolgt aus Sicherheitsgründen und für den Fall, dass die betroffene Person durch einen abgegebenen Kommentar die Rechte Dritter verletzt oder rechtswidrige Inhalte postet. Die Speicherung dieser personenbezogenen Daten erfolgt daher im eigenen Interesse des für die Verarbeitung Verantwortlichen, damit sich dieser im Falle einer Rechtsverletzung gegebenenfalls exkulpieren könnte. Es erfolgt keine Weitergabe dieser erhobenen personenbezogenen Daten an Dritte, sofern eine solche Weitergabe nicht gesetzlich vorgeschrieben ist oder der Rechtsverteidigung des für die Verarbeitung Verantwortlichen dient.</p>
 
-<!-- wp:paragraph -->
-<p>Email: j.visse68@gmail.com<br>Tel.: +49 (0) 5453 / 93 24 70</p>
-<!-- /wp:paragraph -->
+<h4>10. Routinemäßige Löschung und Sperrung von personenbezogenen Daten</h4>
+<p>Der für die Verarbeitung Verantwortliche verarbeitet und speichert personenbezogene Daten der betroffenen Person nur für den Zeitraum, der zur Erreichung des Speicherungszwecks erforderlich ist oder sofern dies durch den Europäischen Richtlinien- und Verordnungsgeber oder einen anderen Gesetzgeber in Gesetzen oder Vorschriften, welchen der für die Verarbeitung Verantwortliche unterliegt, vorgesehen wurde.</p>
 
-<!-- wp:heading {"level":3} -->
-<h6 id="7rechtaufdatenbertragbarkeit">8. Recht auf Datenübertragbarkeit</h6>
-<!-- /wp:heading -->
+<p>Entfällt der Speicherungszweck oder läuft eine vom Europäischen Richtlinien- und Verordnungsgeber oder einem anderen zuständigen Gesetzgeber vorgeschriebene Speicherfrist ab, werden die personenbezogenen Daten routinemäßig und entsprechend den gesetzlichen Vorschriften gesperrt oder gelöscht.</p>
 
-<!-- wp:paragraph -->
-<p>Sie haben den Anspruch, dass wir Ihnen die Ihre Person betreffenden Daten, die Sie uns übermittelt haben, in einem strukturierten, gängigen und maschinenlesbaren Format zur Verfügung zu stellen. Sie können von uns zudem verlangen, dass wir diese Daten einem Dritten, auf Ihre erste Weisung hin unverzüglich übermitteln, sofern die Verarbeitung auf einer Einwilligung gem. Art. 6 Abs. 1 lit. a DSGVO oder Art. 9 Abs. 2 lit. a DSGVO oder auf einem Vertrag gem. Art. 6 Abs. 1 lit. b DSGVO beruht und die Verarbeitung durch uns im Rahmen einer automatisierten Datenverarbeitung erfolgt.<br>Bei der Ausübung dieses Rechts der Datenübertragbarkeit haben Sie ferner das Recht, zu erwirken, dass die Sie betreffenden personenbezogenen Daten direkt von einem Verantwortlichen einem anderen Verantwortlichen übermittelt werden, soweit dies technisch machbar ist. Freiheiten und Rechte anderer Personen dürfen hierdurch nicht beeinträchtigt werden.<br>Das Recht auf Datenübertragbarkeit gilt nicht für eine Verarbeitung personenbezogener Daten, die für die Wahrnehmung einer Aufgabe erforderlich ist, die im öffentlichen Interesse liegt oder in Ausübung öffentlicher Gewalt erfolgt, die dem Verantwortlichen übertragen wurde.</p>
-<!-- /wp:paragraph -->
+<h4>11. Rechte der betroffenen Person</h4>
+<ul style="list-style: none;">
+<li><h4>a)    Recht auf Bestätigung</h4>
+<p>Jede betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber eingeräumte Recht, von dem für die Verarbeitung Verantwortlichen eine Bestätigung darüber zu verlangen, ob sie betreffende personenbezogene Daten verarbeitet werden. Möchte eine betroffene Person dieses Bestätigungsrecht in Anspruch nehmen, kann sie sich hierzu jederzeit an einen Mitarbeiter des für die Verarbeitung Verantwortlichen wenden.</p>
+</li>
+<li><h4>b)    Recht auf Auskunft</h4>
+<p>Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, jederzeit von dem für die Verarbeitung Verantwortlichen unentgeltliche Auskunft über die zu seiner Person gespeicherten personenbezogenen Daten und eine Kopie dieser Auskunft zu erhalten. Ferner hat der Europäische Richtlinien- und Verordnungsgeber der betroffenen Person Auskunft über folgende Informationen zugestanden:</p>
 
-<!-- wp:heading {"level":3} -->
-<h6 id="8beschwerderechtbeideraufsichtsbehrdegemart77abs1dsgvo">9. Beschwerderecht bei der Aufsichtsbehörde gem. Art. 77 Abs. 1 DSGVO</h6>
-<!-- /wp:heading -->
+<ul style="list-style: none;">
+<li>die Verarbeitungszwecke</li>
+<li>die Kategorien personenbezogener Daten, die verarbeitet werden</li>
+<li>die Empfänger oder Kategorien von Empfängern, gegenüber denen die personenbezogenen Daten offengelegt worden sind oder noch offengelegt werden, insbesondere bei Empfängern in Drittländern oder bei internationalen Organisationen</li>
+<li>falls möglich die geplante Dauer, für die die personenbezogenen Daten gespeichert werden, oder, falls dies nicht möglich ist, die Kriterien für die Festlegung dieser Dauer</li>
+<li>das Bestehen eines Rechts auf Berichtigung oder Löschung der sie betreffenden personenbezogenen Daten oder auf Einschränkung der Verarbeitung durch den Verantwortlichen oder eines Widerspruchsrechts gegen diese Verarbeitung</li>
+<li>das Bestehen eines Beschwerderechts bei einer Aufsichtsbehörde</li>
+<li>wenn die personenbezogenen Daten nicht bei der betroffenen Person erhoben werden: Alle verfügbaren Informationen über die Herkunft der Daten</li>
+<li>das Bestehen einer automatisierten Entscheidungsfindung einschließlich Profiling gemäß Artikel 22 Abs.1 und 4 DS-GVO und — zumindest in diesen Fällen — aussagekräftige Informationen über die involvierte Logik sowie die Tragweite und die angestrebten Auswirkungen einer derartigen Verarbeitung für die betroffene Person</li>
 
-<!-- wp:paragraph -->
-<p>Sofern Sie den Verdacht haben, dass auf unserer Seite Ihre Daten rechtswidrig verarbeitet werden, können Sie selbstverständlich jederzeit eine gerichtliche Klärung der Problematik herbeiführen. Unabhängig davon steht Ihnen die Möglichkeit zur Verfügung, sich an eine Aufsichtsbehörde zu wenden. Das Beschwerderecht steht Ihnen in dem EU-Mitgliedstaat Ihres Aufenthaltsortes, Ihres Arbeitsplatzes und/oder des Orts des vermeintlichen Verstoßes zu, d.h. Sie können die Aufsichtsbehörde, an die Sie sich wenden, an den oben genannten Orten wählen. Die Aufsichtsbehörde, bei der die Beschwerde eingereicht wurde, unterrichtet Sie dann über den Stand und die Ergebnisse Ihrer Eingabe, einschließlich der Möglichkeit eines gerichtlichen Rechtsbehelfs nach Art. 78 DSGVO.</p>
-<!-- /wp:paragraph -->
+</ul>
+<p>Ferner steht der betroffenen Person ein Auskunftsrecht darüber zu, ob personenbezogene Daten an ein Drittland oder an eine internationale Organisation übermittelt wurden. Sofern dies der Fall ist, so steht der betroffenen Person im Übrigen das Recht zu, Auskunft über die geeigneten Garantien im Zusammenhang mit der Übermittlung zu erhalten.</p>
 
-<!-- wp:paragraph -->
-<p>Erstellt durch:<br>© IT-Recht-Kanzlei DURY –&nbsp;<a href="http://www.dury.de/" target="_blank" rel="noreferrer noopener">www.dury.de</a><br>© Website-Check GmbH –&nbsp;<a href="http://www.website-check.de/" target="_blank" rel="noreferrer noopener">www.website-check.de</a></p>
-<!-- /wp:paragraph -->
-</main>
+<p>Möchte eine betroffene Person dieses Auskunftsrecht in Anspruch nehmen, kann sie sich hierzu jederzeit an einen Mitarbeiter des für die Verarbeitung Verantwortlichen wenden.</p>
+</li>
+<li><h4>c)    Recht auf Berichtigung</h4>
+<p>Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, die unverzügliche Berichtigung sie betreffender unrichtiger personenbezogener Daten zu verlangen. Ferner steht der betroffenen Person das Recht zu, unter Berücksichtigung der Zwecke der Verarbeitung, die Vervollständigung unvollständiger personenbezogener Daten — auch mittels einer ergänzenden Erklärung — zu verlangen.</p>
+
+<p>Möchte eine betroffene Person dieses Berichtigungsrecht in Anspruch nehmen, kann sie sich hierzu jederzeit an einen Mitarbeiter des für die Verarbeitung Verantwortlichen wenden.</p></li>
+<li>
+<h4>d)    Recht auf Löschung (Recht auf Vergessen werden)</h4>
+<p>Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, von dem Verantwortlichen zu verlangen, dass die sie betreffenden personenbezogenen Daten unverzüglich gelöscht werden, sofern einer der folgenden Gründe zutrifft und soweit die Verarbeitung nicht erforderlich ist:</p>
+
+<ul style="list-style: none;">
+<li>Die personenbezogenen Daten wurden für solche Zwecke erhoben oder auf sonstige Weise verarbeitet, für welche sie nicht mehr notwendig sind.</li>
+<li>Die betroffene Person widerruft ihre Einwilligung, auf die sich die Verarbeitung gemäß Art. 6 Abs. 1 Buchstabe a DS-GVO oder Art. 9 Abs. 2 Buchstabe a DS-GVO stützte, und es fehlt an einer anderweitigen Rechtsgrundlage für die Verarbeitung.</li>
+<li>Die betroffene Person legt gemäß Art. 21 Abs. 1 DS-GVO Widerspruch gegen die Verarbeitung ein, und es liegen keine vorrangigen berechtigten Gründe für die Verarbeitung vor, oder die betroffene Person legt gemäß Art. 21 Abs. 2 DS-GVO Widerspruch gegen die Verarbeitung ein.</li>
+<li>Die personenbezogenen Daten wurden unrechtmäßig verarbeitet.</li>
+<li>Die Löschung der personenbezogenen Daten ist zur Erfüllung einer rechtlichen Verpflichtung nach dem Unionsrecht oder dem Recht der Mitgliedstaaten erforderlich, dem der Verantwortliche unterliegt.</li>
+<li>Die personenbezogenen Daten wurden in Bezug auf angebotene Dienste der Informationsgesellschaft gemäß Art. 8 Abs. 1 DS-GVO erhoben.</li>
+
+</ul>
+<p>Sofern einer der oben genannten Gründe zutrifft und eine betroffene Person die Löschung von personenbezogenen Daten, die bei der Kommunalbündnis Recke gespeichert sind, veranlassen möchte, kann sie sich hierzu jederzeit an einen Mitarbeiter des für die Verarbeitung Verantwortlichen wenden. Der Mitarbeiter der Kommunalbündnis Recke wird veranlassen, dass dem Löschverlangen unverzüglich nachgekommen wird.</p>
+
+<p>Wurden die personenbezogenen Daten von der Kommunalbündnis Recke öffentlich gemacht und ist unser Unternehmen als Verantwortlicher gemäß Art. 17 Abs. 1 DS-GVO zur Löschung der personenbezogenen Daten verpflichtet, so trifft die Kommunalbündnis Recke unter Berücksichtigung der verfügbaren Technologie und der Implementierungskosten angemessene Maßnahmen, auch technischer Art, um andere für die Datenverarbeitung Verantwortliche, welche die veröffentlichten personenbezogenen Daten verarbeiten, darüber in Kenntnis zu setzen, dass die betroffene Person von diesen anderen für die Datenverarbeitung Verantwortlichen die Löschung sämtlicher Links zu diesen personenbezogenen Daten oder von Kopien oder Replikationen dieser personenbezogenen Daten verlangt hat, soweit die Verarbeitung nicht erforderlich ist. Der Mitarbeiter der Kommunalbündnis Recke wird im Einzelfall das Notwendige veranlassen.</p>
+</li>
+<li><h4>e)    Recht auf Einschränkung der Verarbeitung</h4>
+<p>Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, von dem Verantwortlichen die Einschränkung der Verarbeitung zu verlangen, wenn eine der folgenden Voraussetzungen gegeben ist:</p>
+
+<ul style="list-style: none;">
+<li>Die Richtigkeit der personenbezogenen Daten wird von der betroffenen Person bestritten, und zwar für eine Dauer, die es dem Verantwortlichen ermöglicht, die Richtigkeit der personenbezogenen Daten zu überprüfen.</li>
+<li>Die Verarbeitung ist unrechtmäßig, die betroffene Person lehnt die Löschung der personenbezogenen Daten ab und verlangt stattdessen die Einschränkung der Nutzung der personenbezogenen Daten.</li>
+<li>Der Verantwortliche benötigt die personenbezogenen Daten für die Zwecke der Verarbeitung nicht länger, die betroffene Person benötigt sie jedoch zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.</li>
+<li>Die betroffene Person hat Widerspruch gegen die Verarbeitung gem. Art. 21 Abs. 1 DS-GVO eingelegt und es steht noch nicht fest, ob die berechtigten Gründe des Verantwortlichen gegenüber denen der betroffenen Person überwiegen.</li>
+
+</ul>
+<p>Sofern eine der oben genannten Voraussetzungen gegeben ist und eine betroffene Person die Einschränkung von personenbezogenen Daten, die bei der Kommunalbündnis Recke gespeichert sind, verlangen möchte, kann sie sich hierzu jederzeit an einen Mitarbeiter des für die Verarbeitung Verantwortlichen wenden. Der Mitarbeiter der Kommunalbündnis Recke wird die Einschränkung der Verarbeitung veranlassen.</p>
+</li>
+<li><h4>f)     Recht auf Datenübertragbarkeit</h4>
+<p>Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, die sie betreffenden personenbezogenen Daten, welche durch die betroffene Person einem Verantwortlichen bereitgestellt wurden, in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten. Sie hat außerdem das Recht, diese Daten einem anderen Verantwortlichen ohne Behinderung durch den Verantwortlichen, dem die personenbezogenen Daten bereitgestellt wurden, zu übermitteln, sofern die Verarbeitung auf der Einwilligung gemäß Art. 6 Abs. 1 Buchstabe a DS-GVO oder Art. 9 Abs. 2 Buchstabe a DS-GVO oder auf einem Vertrag gemäß Art. 6 Abs. 1 Buchstabe b DS-GVO beruht und die Verarbeitung mithilfe automatisierter Verfahren erfolgt, sofern die Verarbeitung nicht für die Wahrnehmung einer Aufgabe erforderlich ist, die im öffentlichen Interesse liegt oder in Ausübung öffentlicher Gewalt erfolgt, welche dem Verantwortlichen übertragen wurde.</p>
+
+<p>Ferner hat die betroffene Person bei der Ausübung ihres Rechts auf Datenübertragbarkeit gemäß Art. 20 Abs. 1 DS-GVO das Recht, zu erwirken, dass die personenbezogenen Daten direkt von einem Verantwortlichen an einen anderen Verantwortlichen übermittelt werden, soweit dies technisch machbar ist und sofern hiervon nicht die Rechte und Freiheiten anderer Personen beeinträchtigt werden.</p>
+
+<p>Zur Geltendmachung des Rechts auf Datenübertragbarkeit kann sich die betroffene Person jederzeit an einen Mitarbeiter der Kommunalbündnis Recke wenden.</p>
+
+</li>
+<li>
+<h4>g)    Recht auf Widerspruch</h4>
+<p>Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, aus Gründen, die sich aus ihrer besonderen Situation ergeben, jederzeit gegen die Verarbeitung sie betreffender personenbezogener Daten, die aufgrund von Art. 6 Abs. 1 Buchstaben e oder f DS-GVO erfolgt, Widerspruch einzulegen. Dies gilt auch für ein auf diese Bestimmungen gestütztes Profiling.</p>
+
+<p>Die Kommunalbündnis Recke verarbeitet die personenbezogenen Daten im Falle des Widerspruchs nicht mehr, es sei denn, wir können zwingende schutzwürdige Gründe für die Verarbeitung nachweisen, die den Interessen, Rechten und Freiheiten der betroffenen Person überwiegen, oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen.</p>
+
+<p>Verarbeitet die Kommunalbündnis Recke personenbezogene Daten, um Direktwerbung zu betreiben, so hat die betroffene Person das Recht, jederzeit Widerspruch gegen die Verarbeitung der personenbezogenen Daten zum Zwecke derartiger Werbung einzulegen. Dies gilt auch für das Profiling, soweit es mit solcher Direktwerbung in Verbindung steht. Widerspricht die betroffene Person gegenüber der Kommunalbündnis Recke der Verarbeitung für Zwecke der Direktwerbung, so wird die Kommunalbündnis Recke die personenbezogenen Daten nicht mehr für diese Zwecke verarbeiten.</p>
+
+<p>Zudem hat die betroffene Person das Recht, aus Gründen, die sich aus ihrer besonderen Situation ergeben, gegen die sie betreffende Verarbeitung personenbezogener Daten, die bei der Kommunalbündnis Recke zu wissenschaftlichen oder historischen Forschungszwecken oder zu statistischen Zwecken gemäß Art. 89 Abs. 1 DS-GVO erfolgen, Widerspruch einzulegen, es sei denn, eine solche Verarbeitung ist zur Erfüllung einer im öffentlichen Interesse liegenden Aufgabe erforderlich.</p>
+
+<p>Zur Ausübung des Rechts auf Widerspruch kann sich die betroffene Person direkt an jeden Mitarbeiter der Kommunalbündnis Recke oder einen anderen Mitarbeiter wenden. Der betroffenen Person steht es ferner frei, im Zusammenhang mit der Nutzung von Diensten der Informationsgesellschaft, ungeachtet der Richtlinie 2002/58/EG, ihr Widerspruchsrecht mittels automatisierter Verfahren auszuüben, bei denen technische Spezifikationen verwendet werden.</p>
+</li>
+<li><h4>h)    Automatisierte Entscheidungen im Einzelfall einschließlich Profiling</h4>
+<p>Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, nicht einer ausschließlich auf einer automatisierten Verarbeitung — einschließlich Profiling — beruhenden Entscheidung unterworfen zu werden, die ihr gegenüber rechtliche Wirkung entfaltet oder sie in ähnlicher Weise erheblich beeinträchtigt, sofern die Entscheidung (1) nicht für den Abschluss oder die Erfüllung eines Vertrags zwischen der betroffenen Person und dem Verantwortlichen erforderlich ist, oder (2) aufgrund von Rechtsvorschriften der Union oder der Mitgliedstaaten, denen der Verantwortliche unterliegt, zulässig ist und diese Rechtsvorschriften angemessene Maßnahmen zur Wahrung der Rechte und Freiheiten sowie der berechtigten Interessen der betroffenen Person enthalten oder (3) mit ausdrücklicher Einwilligung der betroffenen Person erfolgt.</p>
+
+<p>Ist die Entscheidung (1) für den Abschluss oder die Erfüllung eines Vertrags zwischen der betroffenen Person und dem Verantwortlichen erforderlich oder (2) erfolgt sie mit ausdrücklicher Einwilligung der betroffenen Person, trifft die Kommunalbündnis Recke angemessene Maßnahmen, um die Rechte und Freiheiten sowie die berechtigten Interessen der betroffenen Person zu wahren, wozu mindestens das Recht auf Erwirkung des Eingreifens einer Person seitens des Verantwortlichen, auf Darlegung des eigenen Standpunkts und auf Anfechtung der Entscheidung gehört.</p>
+
+<p>Möchte die betroffene Person Rechte mit Bezug auf automatisierte Entscheidungen geltend machen, kann sie sich hierzu jederzeit an einen Mitarbeiter des für die Verarbeitung Verantwortlichen wenden.</p>
+
+</li>
+<li><h4>i)      Recht auf Widerruf einer datenschutzrechtlichen Einwilligung</h4>
+<p>Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, eine Einwilligung zur Verarbeitung personenbezogener Daten jederzeit zu widerrufen.</p>
+
+<p>Möchte die betroffene Person ihr Recht auf Widerruf einer Einwilligung geltend machen, kann sie sich hierzu jederzeit an einen Mitarbeiter des für die Verarbeitung Verantwortlichen wenden.</p>
+
+</li>
+</ul>
+<h4>12. Rechtsgrundlage der Verarbeitung</h4>
+<p>Art. 6 I lit. a DS-GVO dient unserem Unternehmen als Rechtsgrundlage für Verarbeitungsvorgänge, bei denen wir eine Einwilligung für einen bestimmten Verarbeitungszweck einholen. Ist die Verarbeitung personenbezogener Daten zur Erfüllung eines Vertrags, dessen Vertragspartei die betroffene Person ist, erforderlich, wie dies beispielsweise bei Verarbeitungsvorgängen der Fall ist, die für eine Lieferung von Waren oder die Erbringung einer sonstigen Leistung oder Gegenleistung notwendig sind, so beruht die Verarbeitung auf Art. 6 I lit. b DS-GVO. Gleiches gilt für solche Verarbeitungsvorgänge die zur Durchführung vorvertraglicher Maßnahmen erforderlich sind, etwa in Fällen von Anfragen zur unseren Produkten oder Leistungen. Unterliegt unser Unternehmen einer rechtlichen Verpflichtung durch welche eine Verarbeitung von personenbezogenen Daten erforderlich wird, wie beispielsweise zur Erfüllung steuerlicher Pflichten, so basiert die Verarbeitung auf Art. 6 I lit. c DS-GVO. In seltenen Fällen könnte die Verarbeitung von personenbezogenen Daten erforderlich werden, um lebenswichtige Interessen der betroffenen Person oder einer anderen natürlichen Person zu schützen. Dies wäre beispielsweise der Fall, wenn ein Besucher in unserem Betrieb verletzt werden würde und daraufhin sein Name, sein Alter, seine Krankenkassendaten oder sonstige lebenswichtige Informationen an einen Arzt, ein Krankenhaus oder sonstige Dritte weitergegeben werden müssten. Dann würde die Verarbeitung auf Art. 6 I lit. d DS-GVO beruhen.
+Letztlich könnten Verarbeitungsvorgänge auf Art. 6 I lit. f DS-GVO beruhen. Auf dieser Rechtsgrundlage basieren Verarbeitungsvorgänge, die von keiner der vorgenannten Rechtsgrundlagen erfasst werden, wenn die Verarbeitung zur Wahrung eines berechtigten Interesses unseres Unternehmens oder eines Dritten erforderlich ist, sofern die Interessen, Grundrechte und Grundfreiheiten des Betroffenen nicht überwiegen. Solche Verarbeitungsvorgänge sind uns insbesondere deshalb gestattet, weil sie durch den Europäischen Gesetzgeber besonders erwähnt wurden. Er vertrat insoweit die Auffassung, dass ein berechtigtes Interesse anzunehmen sein könnte, wenn die betroffene Person ein Kunde des Verantwortlichen ist (Erwägungsgrund 47 Satz 2 DS-GVO).
+</p>
+
+<h4>13. Berechtigte Interessen an der Verarbeitung, die von dem Verantwortlichen oder einem Dritten verfolgt werden</h4>
+<p>Basiert die Verarbeitung personenbezogener Daten auf Artikel 6 I lit. f DS-GVO ist unser berechtigtes Interesse die Durchführung unserer Geschäftstätigkeit zugunsten des Wohlergehens all unserer Mitarbeiter und unserer Anteilseigner.</p>
+
+<h4>14. Dauer, für die die personenbezogenen Daten gespeichert werden</h4>
+<p>Das Kriterium für die Dauer der Speicherung von personenbezogenen Daten ist die jeweilige gesetzliche Aufbewahrungsfrist. Nach Ablauf der Frist werden die entsprechenden Daten routinemäßig gelöscht, sofern sie nicht mehr zur Vertragserfüllung oder Vertragsanbahnung erforderlich sind.</p>
+
+<h4>15. Gesetzliche oder vertragliche Vorschriften zur Bereitstellung der personenbezogenen Daten; Erforderlichkeit für den Vertragsabschluss; Verpflichtung der betroffenen Person, die personenbezogenen Daten bereitzustellen; mögliche Folgen der Nichtbereitstellung</h4>
+<p>Wir klären Sie darüber auf, dass die Bereitstellung personenbezogener Daten zum Teil gesetzlich vorgeschrieben ist (z.B. Steuervorschriften) oder sich auch aus vertraglichen Regelungen (z.B. Angaben zum Vertragspartner) ergeben kann.
+Mitunter kann es zu einem Vertragsschluss erforderlich sein, dass eine betroffene Person uns personenbezogene Daten zur Verfügung stellt, die in der Folge durch uns verarbeitet werden müssen. Die betroffene Person ist beispielsweise verpflichtet uns personenbezogene Daten bereitzustellen, wenn unser Unternehmen mit ihr einen Vertrag abschließt. Eine Nichtbereitstellung der personenbezogenen Daten hätte zur Folge, dass der Vertrag mit dem Betroffenen nicht geschlossen werden könnte.
+Vor einer Bereitstellung personenbezogener Daten durch den Betroffenen muss sich der Betroffene an einen unserer Mitarbeiter wenden. Unser Mitarbeiter klärt den Betroffenen einzelfallbezogen darüber auf, ob die Bereitstellung der personenbezogenen Daten gesetzlich oder vertraglich vorgeschrieben oder für den Vertragsabschluss erforderlich ist, ob eine Verpflichtung besteht, die personenbezogenen Daten bereitzustellen, und welche Folgen die Nichtbereitstellung der personenbezogenen Daten hätte.
+</p>
+
+<h4>16. Bestehen einer automatisierten Entscheidungsfindung</h4>
+<p>Als verantwortungsbewusstes Unternehmen verzichten wir auf eine automatische Entscheidungsfindung oder ein Profiling.</p>
+
+<p>Diese Datenschutzerklärung wurde durch den Datenschutzerklärungs-Generator der Deutschen Gesellschaft für Datenschutz, der <a href="https://dsgvo-muster-datenschutzerklaerung.dg-datenschutz.de/">Muster Datenschutzerklärung</a> generiert, in Kooperation mit den <a href="https://www.wbs-law.de/">Datenschutz Anwälten</a> der Kanzlei WILDE BEUGER SOLMECKE | Rechtsanwälte erstellt.
+</p>
+
+
+                </p>
+            </div>
+        </main>
+    </div>
+    <div class="social-bar align-items-center text-center mt-4" id="social">
+        <ul>
+            <li class="social-link">
+                <a href="https://www.instagram.com/kommunalbuendnis_recke/"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="social-link">
+                <a href="https://www.facebook.com/kommunalbuendnis/"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="social-link">
+                <a href="https://www.youtube.com/channel/UCVna1ANc2cM1AZCeiz4_NQQ"><i class="fab fa-youtube"></i></a>
+            </li>
+        </ul>
+    </div>
     <?php get_footer(); ?>
-
 </body>
-
 </html>

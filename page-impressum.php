@@ -6,11 +6,6 @@
  * @link    https://tilmerge.xyz/
  */
 ?>
-<?php $debug = false;
-if ($debug) {
-    wp_safe_redirect(home_url());
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 

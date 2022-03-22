@@ -1,5 +1,5 @@
 @media (min-width: 1200px) {
-  .impressum {
+  .datenschutz {
     width: 80%;
     padding-top: 6% !important;
     padding-left: 6% !important;
@@ -7,9 +7,7 @@
   }
 }
 
-.impressum {
+.datenschutz {
   padding: 30px 20px 10px 20px;
-  display: flex;
-  padding: 5% 20% 0 20%;
-  flex-direction: column;
+  text-align: justify;
 }

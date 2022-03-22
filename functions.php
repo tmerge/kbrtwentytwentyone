@@ -17,4 +17,5 @@ function wpbootstrap_enqueue_styles() {
     wp_enqueue_script( 'kbrscript', get_template_directory_uri() . '/assets/js/kbrscript.js');
     }
 add_action('wp_enqueue_scripts', 'wpbootstrap_enqueue_styles');
+?>
 
