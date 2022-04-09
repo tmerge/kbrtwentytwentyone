@@ -1,0 +1,46 @@
+@media (max-width: 1200px) {
+  .member-heading {
+    font-size: 4rem;
+  }
+}
+
+.member-heading {
+  font-size: 2;
+}
+
+.mitglied-wrapper {
+  padding: 6% 6% 0 6%;
+}
+
+.content {
+  line-height: 1.5;
+}
+
+.member {
+  background-color: orange;
+  color: white;
+  border-radius: 50em;
+  height: 25px;
+  outline: none;
+  border: none;
+}
+
+.member:hover {
+  transform: scale(1.2) rotate(-5deg);
+  transition: scale 0.4s ease-in-out;
+}
+
+.member:focus {
+  background-color: lightcoral;
+}
+
+.menu-header .search-bar {
+  float: right;
+  margin-right: 10px;
+  max-width: 140px;
+}
+
+.member > a {
+  text-decoration: none;
+  color: white;
+}

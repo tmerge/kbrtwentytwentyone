@@ -18,6 +18,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import url("assets/css/moudle.datenschutz.css");
 @import url("assets/css/module.impressum.css");
 @import url("assets/css/module.blog.css");
+@import url("assets/css/module.mitglied.css");
 
 body {
   background-size: cover;
@@ -54,16 +55,14 @@ hr {
   }
 
   .logo {
-    top: 50% !important;
+    top: 20% !important;
     left: 40px !important;
-    margin-top: -8px;
   }
 
   .logo img {
     display: block;
-    width: 165px;
+    width: 90px;
     height: auto;
-    transform: scale(1.5);
   }
 
   .menu-toggle {
@@ -267,30 +266,6 @@ hr {
 .sign-lang:hover {
   transform: scale(1.5);
   color: #0094a2;
-}
-
-.member {
-  background-color: orange;
-  color: white;
-  border-radius: 50em;
-  height: 25px;
-  outline: none;
-  border: none;
-}
-
-.member:hover {
-  transform: scale(1.2) rotate(-5deg);
-  transition: scale 0.4s ease-in-out;
-}
-
-.member:focus {
-  background-color: lightcoral;
-}
-
-.menu-header .search-bar {
-  float: right;
-  margin-right: 10px;
-  max-width: 140px;
 }
 
 .search-bar .w {
@@ -577,7 +552,7 @@ main {
 }
 
 section {
-  min-height: 100vh;
+  /*min-height: 100vh;*/
 }
 
 .bg {
@@ -768,4 +743,39 @@ p > .a-heading {
 p > .a-date,
 .a-place {
   font-size: 18px !important;
+}
+
+.wp-section {
+  margin-top: 12px;
+  padding: 6% 6% 3% 6%;
+}
+
+.wp-wrapper {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.wp-content-wrapper {
+  width: 48%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.wp-title {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  margin-left: 10px;
+}
+
+.wp-text {
+  font-size: 24px;
+}
+
+.wp-img {
+  height: auto;
+  width: 550px;
+  background-color: grey;
+  display: inline-block;
+  vertical-align: middle;
 }

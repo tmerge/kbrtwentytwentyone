@@ -35,9 +35,8 @@
         </div>
         <main>
             <div class="datenschutz container-fluid">
-                <h1 class="site-heading">Datenschutz</h1>
+                <h3>Datenschutzerklärung</h3>
                 <p class="text-justify">
-                <h4>Datenschutzerklärung</h4>
 
 <p>Wir freuen uns sehr über Ihr Interesse an unserem Unternehmen. Datenschutz hat einen besonders hohen Stellenwert für die Geschäftsleitung der Kommunalbündnis Recke. Eine Nutzung der Internetseiten der Kommunalbündnis Recke ist grundsätzlich ohne jede Angabe personenbezogener Daten möglich. Sofern eine betroffene Person besondere Services unseres Unternehmens über unsere Internetseite in Anspruch nehmen möchte, könnte jedoch eine Verarbeitung personenbezogener Daten erforderlich werden. Ist die Verarbeitung personenbezogener Daten erforderlich und besteht für eine solche Verarbeitung keine gesetzliche Grundlage, holen wir generell eine Einwilligung der betroffenen Person ein.</p>
 

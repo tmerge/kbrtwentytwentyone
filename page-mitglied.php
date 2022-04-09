@@ -1,18 +1,15 @@
 <?php
 /**
- * The blog template file.
+ * The main template file.
  *
  * This is the most generic template file in a WordPress theme
  * @link    https://tilmerge.xyz/
  */
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KBR | Presse</title>
+    <title>KBR | Mitgliedsantrag</title>
     <?php get_header(); ?>
 </head>
 <body id="body" class="desktop menu-mobile">
@@ -31,29 +28,33 @@
         <div class="menu-header">
             <?php get_template_part( 'template-parts/nav'); ?>
         </div>
-        <main class="blog-wrapper">
-            <h3 class="blog-title">Presse</h3>
-            <div clas="blog-container">
-            <?php
-            echo(get_the_author_meta('user_email', 2));
-            $args = array('numberposts' => '30');
-            $recent_posts = wp_get_recent_posts($args);
-            foreach ($recent_posts as $recent) {
-                printf(
-                    '<li class="">
-                        <a class="" href="%1$s">%2$s</a>
-                        <div class="mt-2 meta-data">%3$s</div>
-                    </li>',
-                    esc_url(get_permalink($recent['ID'])),
-                    apply_filters('the_title', $recent['post_title'], $recent['ID']),
-                    get_the_date('d.m.Y', $recent['ID']),
-                );
-            }
-            ?>
-            </div>
+        <main class="mitglied-wrapper">
+            <h3 class="member-heading">Mitgliedsantrag</h3>
+            <div class="content">
+                <p>Möchten auch Sie mitgestalten, wenn es um Recke geht?</p>
+
+                <p>Wir möchten in Recke eine transparente Politik, die bürgernah und demokratisch ist. Es geht darum, etwas auf den Weg zu bringen, das unserem Motto "Was gut für Recke ist" entspricht. Werden Sie Mitglied im KommunalBündnis Recke und gestalten Sie mit!</p>
+
+                <p>Das KommunalBündnis Recke ist keine Partei, sondern eine Wählergemeinschaft (ein nicht eingetragener Verein).</p>
+
+                <p>Sei dabei, wenn es um Recke geht!</p>
+
+                <p>Hier können Sie sich unsere Mitglieddsantrag im PDF-Format herunterladen:</p>
+
+                <a href="/">PDF Download</a>
+
+                <p>Einfach ausfüllen und unterschreiben! Danach per Post oder E-Mail an:</p>
+
+                <p>KommunalBündnis Recke</br>
+                kbr@kommunalbuendnis-recke.de</br>
+                Buchholzstraße 18b</br>
+                49509 Recke</br></p>
+
+                <p>Wir freuen uns auf Sie!</p>
+    </div>
         </main>
     </div>
-    <div class="social-bar align-items-center text-center mt-4" id="social">
+    <div class="social-bar" id="social">
         <ul>
             <li class="social-link">
                 <a href="https://www.instagram.com/kommunalbuendnis_recke/"><i class="fab fa-instagram"></i></a>
@@ -70,3 +71,4 @@
     <div id="overlay" class="overlay"></div>
 </body>
 </html>
+

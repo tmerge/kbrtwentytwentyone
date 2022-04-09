@@ -1,6 +1,6 @@
 <nav class="menu">
     <div class="item">
-        <a href="/presse">Presse</a>
+        <a href="/aktuelles">Aktuelles</a>
     </div>
     <div class="item sub-item">
         <a href="/politik">Politik</a>
@@ -8,10 +8,26 @@
             <div class="sub-menu-bg" style="background-image: url(https://wordpress.kbr.social/wp-content/themes/kbrtwentytwentyone/assets/img/politik.jpg)"></div>
             <div class="sub-menu-wrapper">
                 <div class="sub-menu-header">Unsere Politik</div>
-                <div class="sub-menu-item"><a class="sub-menu-item-link" href="/politik/ortsteile">Ortsteile</a></div>
+                <div class="sub-menu-item"><a class="sub-menu-item-link" href="/politik/wahlprogramm">Wahlprogramm</a></div>
                 <div class="sub-menu-item"><a class="sub-menu-item-link" href="/politik/gemeinderat">Gemeinderat</a></div>
                 <div class="sub-menu-item"><a class="sub-menu-item-link" href="/politik/satzung">Satzung</a></div>
                 <div class="sub-menu-item"><a class="sub-menu-item-link" href="/politik/antraege">Anträge</a></div>
+                <div class="sub-menu-item"><a class="sub-menu-item-link" href="/politik/haushaltsreden">Haushaltsreden</a></div>
+            </div>
+        </div>
+        <i class="fas fa-caret-down"></i>
+    </div>
+     <div class="item sub-item">
+        <a href="/ueberuns">Über Uns</a>
+        <div class="sub-menu">
+            <div class="sub-menu-bg" style="background-image: url(https://wordpress.kbr.social/wp-content/themes/kbrtwentytwentyone/assets/img/politik.jpg)"></div>
+            <div class="sub-menu-wrapper">
+                <div class="sub-menu-header">Über Uns</div>
+                <div class="sub-menu-item"><a class="sub-menu-item-link" href="/ueberuns/wir">Wir</a></div>
+                <div class="sub-menu-item"><a class="sub-menu-item-link" href="/ueberuns/vorstand">Vorstand</a></div>
+                <div class="sub-menu-item"><a class="sub-menu-item-link" href="/ueberuns/fraktion">Fraktion</a></div>
+                <div class="sub-menu-item"><a class="sub-menu-item-link" href="/ueberuns/ratsmitglieder">Ratsmitglieder</a></div>
+                <div class="sub-menu-item"><a class="sub-menu-item-link" href="/ueberuns/sachkundigebuerger">Sachkundige Bürger</a></div>
             </div>
         </div>
         <i class="fas fa-caret-down"></i>
@@ -33,26 +49,12 @@
     <div class="item">
         <a href="/buergerpreis">Bürgerpreis</a>
     </div>
-    <div class="item sub-item">
-        <a href="/ueberuns">Über Uns</a>
-        <div class="sub-menu">
-            <div class="sub-menu-bg" style="background-image: url(https://wordpress.kbr.social/wp-content/themes/kbrtwentytwentyone/assets/img/politik.jpg)"></div>
-            <div class="sub-menu-wrapper">
-                <div class="sub-menu-header">Über Uns</div>
-                <div class="sub-menu-item"><a class="sub-menu-item-link" href="/ueberuns/wir">Wir</a></div>
-                <div class="sub-menu-item"><a class="sub-menu-item-link" href="/ueberuns/vorstand">Vorstand</a></div>
-                <div class="sub-menu-item"><a class="sub-menu-item-link" href="/ueberuns/fraktion">Fraktion</a></div>
-                <div class="sub-menu-item"><a class="sub-menu-item-link" href="/ueberuns/ratsmitglieder">Ratsmitglieder</a></div>
-            </div>
-        </div>
-        <i class="fas fa-caret-down"></i>
-    </div>
 </nav>
 <div class="menu-right-header">
     <div class="menu-right">
         <div class="item light-toggle"><i class="fa fa-toggle-on"></i></div>
         <div class="item sign-lang"><i class="fas fa-sign-language"></i></div>
-        <button class="member">Mitglied werden <i class="fas fa-check"></i></button>
+        <button class="member"><a href="/mitglied">Mitglied werden <i class="fas fa-check"></i></a></button>
     </div>
     <div class="search-bar">
         <form action="" method="GET">

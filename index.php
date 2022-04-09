@@ -30,10 +30,25 @@
         </div>
         <main>
             <div class="hero">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/s.svg">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/rathaus.webp">
             </div>
-            <section>
-                section1
+            <section class="wp-section">
+                <div class="wp-wrapper">
+                    <div class="wp-content-wrapper">
+                        <p class="wp-title">— Unsere Werte.</br>Bürgernah.Transparent.</p>
+                        <p class="wp-text"></p>
+                    </div>
+                    <img class="wp-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/teamwork.webp"/>
+                </div>
+            </section>
+            <section class="wp-section">
+                <div class="wp-wrapper">
+                    <img class="wp-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/philosophie.webp"/>
+                    <div class="wp-content-wrapper">
+                        <p class="wp-title">— Unsere Philosophie.</br>Qualität.Familiär.</p>
+                        <p class="wp-text"></p>
+                    </div>
+                </div>
             </section>
         </main>
     </div>
