@@ -19,6 +19,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import url("assets/css/module.impressum.css");
 @import url("assets/css/module.blog.css");
 @import url("assets/css/module.mitglied.css");
+@import url("assets/css/moudle.buergerpreis.css");
 
 body {
   background-size: cover;
@@ -56,7 +57,7 @@ hr {
 
   .logo {
     top: 20% !important;
-    left: 40px !important;
+    left: 14px !important;
   }
 
   .logo img {
@@ -324,7 +325,7 @@ hr {
 }
 
 .menu {
-  user-select: none;
+  user-select: none !important;
   -webkit-user-select: none;
 }
 .menu > .item {
@@ -341,6 +342,21 @@ hr {
 
 .menu > .item > a:hover {
   color: #0094a2;
+}
+
+@media (max-width: 800px) {
+  .m-arrow {
+    line-height: 3rem !important;
+    float: right;
+  }
+}
+
+.m-arrow {
+  margin-left: 10px !important;
+}
+
+.item .sub-item {
+  user-select: none !important;
 }
 
 .item.sub-item .sub-menu {
@@ -542,17 +558,13 @@ main {
 /* sections DEBUG */
 .hero {
   width: 100%;
-  min-height: calc(100vh - 177px);
+  /*min-height: calc(100vh - 177px);*/
 }
 
-.hero img {
+.hero > img {
   width: 100%;
-  height: calc(100vh);
   background-size: cover;
-}
-
-section {
-  /*min-height: 100vh;*/
+  max-width: 100%;
 }
 
 .bg {
@@ -745,37 +757,132 @@ p > .a-date,
   font-size: 18px !important;
 }
 
-.wp-section {
-  margin-top: 12px;
-  padding: 6% 6% 3% 6%;
-}
+/* wp section */
+@media (min-width: 1200px) {
+  .wp-section {
+    margin-top: 12px;
+    padding: 6% 6% 3% 6%;
+  }
 
-.wp-wrapper {
-  text-align: center;
-  margin-top: 10px;
-}
+  .wp-wrapper {
+    text-align: center;
+    margin-top: 10px;
+  }
 
-.wp-content-wrapper {
-  width: 48%;
-  display: inline-block;
-  vertical-align: middle;
+  .wp-title {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    margin-left: 10px;
+  }
+
+  .wp-text {
+    font-size: 24px;
+  }
+
+  .wp-img {
+    height: auto;
+    width: 550px;
+    background-color: grey;
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 
 .wp-title {
-  text-align: left;
-  text-transform: uppercase;
-  font-size: 2.4rem;
-  margin-left: 10px;
+  font-size: 1.3rem;
 }
 
-.wp-text {
-  font-size: 24px;
+.wp-content-wrapper {
+  width: 100%;
+  display: inline-block;
 }
 
 .wp-img {
+  max-width: 100%;
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* Page style */
+@media (min-width: 1200px) {
+  .page {
+    width: 80%;
+    padding-top: 6% !important;
+    padding-left: 6% !important;
+    padding-right: 6% !important;
+  }
+}
+
+.page {
+  padding: 30px 20px 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card styles */
+@media (min-width: 1200px) {
+  .card-wrapper {
+    margin: 0 auto;
+    padding-bottom: 60px;
+    display: grid !important;
+    grid-gap: 40px;
+    grid-template-columns: 300px 300px 300px 300px;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 12px;
+  }
+
+  .card-img {
+    width: 100%;
+    height: 200px;
+    display: flex;
+  }
+
+  .card-img > img {
+    border-radius: 12px 12px 0 0;
+    max-width: 100% !important;
+    max-height: 200px;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+
+  .card .content {
+    margin-top: -2px;
+    padding: 6px;
+  }
+
+  .content .name {
+    font-weight: bold;
+  }
+}
+
+.card-wrapper {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.card {
+  width: 100%;
   height: auto;
-  width: 550px;
-  background-color: grey;
-  display: inline-block;
-  vertical-align: middle;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.card .content {
+  padding: 6px;
+}
+
+.content .name {
+  font-weight: bold;
+}
+
+/* gemeinde rat daten */
+.daten > img {
+  max-width: 100% !important;
 }

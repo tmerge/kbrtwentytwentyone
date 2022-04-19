@@ -15,14 +15,14 @@
 <body id="body" class="desktop menu-mobile">
     <div class="mobile-menu-header">
         <div class="logo">
-            <a href="https://wordpress.kbr.social"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/KBR_Logo.png" alt="KBR Logo"></a>
+            <a href="https://wordpress.kbr.social"><img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/img/KBR_Logo.png" alt="KBR Logo"></a>
         </div>
         <div class="menu-toggle">
             <div></div>
         </div>
     </div>
     <div class="logo">
-        <a href="https://wordpress.kbr.social"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/KBR_Logo_rotate.png" alt="KBR Logo"></a>
+        <a href="https://wordpress.kbr.social"><img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/img/KBR_Logo_rotate.png" alt="KBR Logo"></a>
     </div>
     <div class="container-fluid">
         <div class="menu-header">
@@ -54,19 +54,7 @@
     </div>
         </main>
     </div>
-    <div class="social-bar" id="social">
-        <ul>
-            <li class="social-link">
-                <a href="https://www.instagram.com/kommunalbuendnis_recke/"><i class="fab fa-instagram"></i></a>
-            </li>
-            <li class="social-link">
-                <a href="https://www.facebook.com/kommunalbuendnis/"><i class="fab fa-facebook-f"></i></a>
-            </li>
-            <li class="social-link">
-                <a href="https://www.youtube.com/channel/UCVna1ANc2cM1AZCeiz4_NQQ"><i class="fab fa-youtube"></i></a>
-            </li>
-        </ul>
-    </div>
+    <?php get_template_part( 'template-parts/social-bar'); ?>
     <?php get_footer(); ?>
     <div id="overlay" class="overlay"></div>
 </body>

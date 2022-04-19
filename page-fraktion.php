@@ -28,25 +28,110 @@
         <div class="menu-header">
             <?php get_template_part( 'template-parts/nav'); ?>
         </div>
-        <main>
-            <h1>Fraktion</h1>
+        <main class="page">
+            <h3>Fraktion</h3>
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mitglieder/mb.jpg" />
+                    </div>
+                    <div class="content">
+                        <p class="name">Manfred Berghaus</p>
+                        <p>1. stellvertretender Fraktionsvorsitzender</p>
+                        <p>Beruf: </p>
+                        <p><i class="fas fa-envelope"></i> manfred@kbr.social</p>
+                        <p><i class="fas fa-phone-alt"></i> +49 (0) 5453 / 0000</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mitglieder/ma.jpg" />
+                    </div>
+                    <div class="content">
+                        <p class="name">Mechthild Ahrens</p>
+                        <p>Fraktionsmitglied</p>
+                        <p>Beruf: </p>
+                        <p><i class="fas fa-envelope"></i> mechthild@kbr.social</p>
+                        <p><i class="fas fa-phone-alt"></i> +49 (0) 5453 / 0000</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mitglieder/cf.jpg" />
+                    </div>
+                    <div class="content">
+                        <p class="name">Christoph Finke</p>
+                        <p>Fraktionsmitglied</p>
+                        <p>Beruf: </p>
+                        <p><i class="fas fa-envelope"></i> cristoph@kbr.social</p>
+                        <p><i class="fas fa-phone-alt"></i> +49 (0) 5453 / 0000</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mitglieder/gf.jpg" />
+                    </div>
+                    <div class="content">
+                        <p class="name">Gerd Furche</p>
+                        <p>Fraktionsmitglied</p>
+                        <p>Beruf: </p>
+                        <p><i class="fas fa-envelope"></i> gerd@kbr.social</p>
+                        <p><i class="fas fa-phone-alt"></i> +49 (0) 5453 / 0000</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mitglieder/ap.jpg" />
+                    </div>
+                    <div class="content">
+                        <p class="name">Annette Philipp</p>
+                        <p>Fraktionsmitglied</p>
+                        <p>Beruf: </p>
+                        <p><i class="fas fa-envelope"></i> annette@kbr.social</p>
+                        <p><i class="fas fa-phone-alt"></i> +49 (0) 5453 / 0000</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mitglieder/mp.jpg" />
+                    </div>
+                    <div class="content">
+                        <p class="name">Michael Pieper</p>
+                        <p>Fraktionsmitglied</p>
+                        <p>Beruf: </p>
+                        <p><i class="fas fa-envelope"></i> michael@kbr.social</p>
+                        <p><i class="fas fa-phone-alt"></i> +49 (0) 5453 / 0000</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mitglieder/fs.jpg" />
+                    </div>
+                    <div class="content">
+                        <p class="name">Frank Schneider</p>
+                        <p>Fraktionsmitglied</p>
+                        <p>Beruf: </p>
+                        <p><i class="fas fa-envelope"></i> frank@kbr.social</p>
+                        <p><i class="fas fa-phone-alt"></i> +49 (0) 5453 / 0000</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mitglieder/sw.jpg" />
+                    </div>
+                    <div class="content">
+                        <p class="name">Sonja Wallmeyer</p>
+                        <p>Fraktionsmitglied</p>
+                        <p>Beruf: </p>
+                        <p><i class="fas fa-envelope"></i> sonja@kbr.social</p>
+                        <p><i class="fas fa-phone-alt"></i> +49 (0) 5453 / 0000</p>
+                    </div>
+                </div>
+            </div>
         </main>
     </div>
-    <div class="social-bar" id="social">
-        <ul>
-            <li class="social-link">
-                <a href="https://www.instagram.com/kommunalbuendnis_recke/"><i class="fab fa-instagram"></i></a>
-            </li>
-            <li class="social-link">
-                <a href="https://www.facebook.com/kommunalbuendnis/"><i class="fab fa-facebook-f"></i></a>
-            </li>
-            <li class="social-link">
-                <a href="https://www.youtube.com/channel/UCVna1ANc2cM1AZCeiz4_NQQ"><i class="fab fa-youtube"></i></a>
-            </li>
-        </ul>
-    </div>
+    <?php get_template_part( 'template-parts/social-bar'); ?>
     <?php get_footer(); ?>
     <div id="overlay" class="overlay"></div>
 </body>
 </html>
-

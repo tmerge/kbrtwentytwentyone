@@ -3,7 +3,7 @@
         <a href="/aktuelles">Aktuelles</a>
     </div>
     <div class="item sub-item">
-        <a href="/politik">Politik</a>
+        <a href="javascript:void(0);">Politik <i class="ml-2 fas fa-caret-down m-arrow"></i></a>
         <div class="sub-menu">
             <div class="sub-menu-bg" style="background-image: url(https://wordpress.kbr.social/wp-content/themes/kbrtwentytwentyone/assets/img/politik.jpg)"></div>
             <div class="sub-menu-wrapper">
@@ -15,10 +15,9 @@
                 <div class="sub-menu-item"><a class="sub-menu-item-link" href="/politik/haushaltsreden">Haushaltsreden</a></div>
             </div>
         </div>
-        <i class="fas fa-caret-down"></i>
     </div>
      <div class="item sub-item">
-        <a href="/ueberuns">Über Uns</a>
+        <a href="javascript:void(0);">Über Uns</a><i class="ml-2 fas fa-caret-down m-arrow"></i>
         <div class="sub-menu">
             <div class="sub-menu-bg" style="background-image: url(https://wordpress.kbr.social/wp-content/themes/kbrtwentytwentyone/assets/img/politik.jpg)"></div>
             <div class="sub-menu-wrapper">
@@ -30,10 +29,9 @@
                 <div class="sub-menu-item"><a class="sub-menu-item-link" href="/ueberuns/sachkundigebuerger">Sachkundige Bürger</a></div>
             </div>
         </div>
-        <i class="fas fa-caret-down"></i>
     </div>
     <div class="item sub-item">
-        <a href="/media">Medien</a>
+        <a href="javascript:void(0);">Medien <i class="ml-2 fas fa-caret-down m-arrow"></i></a>
         <div class="sub-menu">
             <div class="sub-menu-bg" style="background-image: url(https://wordpress.kbr.social/wp-content/themes/kbrtwentytwentyone/assets/img/media.jpg)"></div>
             <div class="sub-menu-wrapper">
@@ -44,7 +42,6 @@
                 <div class="sub-menu-item"><a class="sub-menu-item-link" href="/media/podcasts">Podcats</a></div>-->
             </div>
         </div>
-        <i class="fas fa-caret-down"></i>
     </div>
     <div class="item">
         <a href="/buergerpreis">Bürgerpreis</a>

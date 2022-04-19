@@ -1,0 +1,28 @@
+@media (min-width: 1200px) {
+  .b-logo {
+    width: auto;
+    height: 50vh;
+  }
+}
+.b-logo {
+  max-width: 100%;
+}
+
+.b-img-container {
+  margin: 0 auto !important;
+}
+
+.vorschlag-form {
+  display: grid;
+  margin: 0 auto;
+  width: 50vw;
+  grid-template-columns: 1fr 1fr;
+}
+
+.buergerpreis {
+  min-height: 100vh;
+}
+
+.b-info-text {
+  text-align: justify !important;
+}

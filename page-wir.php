@@ -28,23 +28,11 @@
         <div class="menu-header">
             <?php get_template_part( 'template-parts/nav'); ?>
         </div>
-        <main>
-            <h1>Wir</h1>
+        <main class="page">
+            <h3>Wir</h3>
         </main>
     </div>
-    <div class="social-bar" id="social">
-        <ul>
-            <li class="social-link">
-                <a href="https://www.instagram.com/kommunalbuendnis_recke/"><i class="fab fa-instagram"></i></a>
-            </li>
-            <li class="social-link">
-                <a href="https://www.facebook.com/kommunalbuendnis/"><i class="fab fa-facebook-f"></i></a>
-            </li>
-            <li class="social-link">
-                <a href="https://www.youtube.com/channel/UCVna1ANc2cM1AZCeiz4_NQQ"><i class="fab fa-youtube"></i></a>
-            </li>
-        </ul>
-    </div>
+    <?php get_template_part( 'template-parts/social-bar'); ?>
     <?php get_footer(); ?>
     <div id="overlay" class="overlay"></div>
 </body>
