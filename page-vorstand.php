@@ -28,7 +28,7 @@
         <div class="menu-header">
             <?php get_template_part( 'template-parts/nav'); ?>
         </div>
-        <main class="page">
+        <main class="page mx-auto">
             <h3>Vorstand</h3>
             <div class="card-wrapper">
                 <div class="card">
@@ -38,7 +38,7 @@
                     <div class="content">
                         <p class="name">Jürgen Visse</p>
                         <p>1. Vorsitzender</p>
-                        <p>Beruf: </p>
+                        <p>Beruf: Lehrer</p>
                         <p><i class="fas fa-envelope"></i> juergen@kbr.social</p>
                         <p><i class="fas fa-phone-alt"></i> +49 (0) 5453 / 0000</p>
                     </div>
@@ -48,9 +48,9 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mitglieder/os.jpg" />
                     </div>
                     <div class="content">
-                        <p class="name">Olé Stecker-Schürmann</p>
+                        <p class="name">Ole Stecker-Schürmann</p>
                         <p>2. Vorsitzender</p>
-                        <p>Beruf: </p>
+                        <p>Beruf: Entwicklungsingenieur</p>
                         <p><i class="fas fa-envelope"></i> ole@kbr.social</p>
                         <p><i class="fas fa-phone-alt"></i> +49 (0) 5453 / 0000</p>
                     </div>

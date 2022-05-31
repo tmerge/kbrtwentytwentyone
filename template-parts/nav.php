@@ -22,7 +22,7 @@
             <div class="sub-menu-bg" style="background-image: url(https://wordpress.kbr.social/wp-content/themes/kbrtwentytwentyone/assets/img/politik.jpg)"></div>
             <div class="sub-menu-wrapper">
                 <div class="sub-menu-header">Über Uns</div>
-                <div class="sub-menu-item"><a class="sub-menu-item-link" href="/ueberuns/wir">Wir</a></div>
+                <!--<div class="sub-menu-item"><a class="sub-menu-item-link" href="/ueberuns/wir">Wir</a></div>-->
                 <div class="sub-menu-item"><a class="sub-menu-item-link" href="/ueberuns/vorstand">Vorstand</a></div>
                 <div class="sub-menu-item"><a class="sub-menu-item-link" href="/ueberuns/fraktion">Fraktion</a></div>
                 <div class="sub-menu-item"><a class="sub-menu-item-link" href="/ueberuns/ratsmitglieder">Ratsmitglieder</a></div>
