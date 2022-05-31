@@ -41,7 +41,7 @@
 
                 <p>Hier können Sie sich unsere Mitglieddsantrag im PDF-Format herunterladen:</p>
 
-                <a href="/">PDF Download</a>
+                <a href="https://wordpress.kbr.social/wp-content/uploads/Beitrittserklaerung.pdf">PDF Download</a>
 
                 <p>Einfach ausfüllen und unterschreiben! Danach per Post oder E-Mail an:</p>
 
