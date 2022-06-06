@@ -1,7 +1,7 @@
 # kbr twenty twenty-one
 
 ## About kbr tewenty twenty-one
-Hopefully the new wordpress template of Kommunal Bündnis Recke for next years.
+New KBR Homepage Template
 
 ## License
 
